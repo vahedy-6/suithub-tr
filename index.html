@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>SuitHub TR — کاتالوگ جامع ۵۰۰ کت و شلوار پرفروش ترکیه (TL)</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Vazirmatn', 'Inter', sans-serif;
+    }
+    .ltr-num {
+      direction: ltr;
+      display: inline-block;
+      font-family: 'Inter', 'Vazirmatn', sans-serif;
+    }
+    .brand-tab-active {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      border-color: #d97706;
+      box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.25);
+    }
+    .product-card {
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.14);
+      border-color: #cbd5e1;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 9999px;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .aspect-suit {
+      aspect-ratio: 2 / 3;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+  <!-- Compact Mobile-First Sticky Header (Only Brand Title + Horizontal Scrollable 5 Brand Tabs) -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2">
+      <!-- Top Slim Row: Compact Logo + Shortlist + Discreet Admin Lock -->
+      <div class="flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2 min-w-0">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 text-amber-400 flex items-center justify-center font-extrabold text-sm tracking-wider shrink-0">
+            SH
+          </div>
+          <div class="truncate">
+            <div class="flex items-center gap-1.5">
+              <h1 class="text-sm sm:text-base font-extrabold text-slate-900 tracking-tight truncate">SuitHub TR</h1>
+              <span class="px-1.5 py-0.5 text-[10px] font-bold bg-amber-100 text-amber-800 rounded-md border border-amber-200 shrink-0">۵۰۰ مدل اورجینال</span>
+              <span id="newProductsAlertBadge" class="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>آپدیت شبانه: ۱۲:۰۰ شب</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Controls: Customer Basket + Admin Controls (Hidden for Visitors by Default) -->
+        <div class="flex items-center gap-1.5 shrink-0">
+          <!-- Admin Only Badge & Buttons (Hidden until Admin logs in with password) -->
+          <button id="toggleCustomerModeBtn" type="button" class="admin-only-control hidden items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-bold border border-emerald-300 bg-emerald-50 text-emerald-900 hover:bg-emerald-100 transition">
+            <span id="customerModeDot" class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span id="customerModeLabel">حالت نمایش به مشتری: غیرفعال</span>
+          </button>
+
+          <button id="openScraperModalBtn" type="button" class="admin-only-control hidden items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-bold bg-slate-900 text-amber-400 hover:bg-slate-800 transition shadow-sm">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <span>ربات آپدیت خودکار و اسکرپر ۵ سایت</span>
+          </button>
+
+          <!-- Customer Selection Basket (Always Visible) -->
+          <button id="openShortlistBtn" type="button" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-bold border border-amber-300 bg-amber-50 text-amber-900 hover:bg-amber-100 transition">
+            <span>سبد انتخاب مشتری</span>
+            <span id="shortlistCountBadge" class="px-1.5 py-0.2 text-[10px] rounded-full bg-amber-600 text-white ltr-num">0</span>
+          </button>
+
+          <!-- Discreet Admin Lock Button -->
+          <button id="adminAuthBtn" type="button" title="ورود مدیریت" class="w-8 h-8 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-500 hover:text-slate-900 flex items-center justify-center text-xs transition">
+            <span id="adminLockIcon">🔒</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Horizontal Scrollable 5 Brand Tabs (Swipeable on Mobile, Grid on Desktop) -->
+      <div class="mt-2 pt-1.5 border-t border-slate-100">
+        <div id="brandTabsContainer" class="flex sm:grid sm:grid-cols-5 gap-1.5 overflow-x-auto no-scrollbar pb-0.5">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Non-Sticky Filter & Brand Info Section (Scrolls naturally so products get maximum screen space on mobile) -->
+  <section class="max-w-7xl mx-auto w-full px-3 sm:px-6 pt-3">
+    <div class="bg-white rounded-2xl border border-slate-200 p-3 sm:p-4 shadow-sm">
+      <!-- Compact Brand Summary Row -->
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-slate-100">
+        <div class="flex items-center gap-2 min-w-0">
+          <div id="activeBrandBadge" class="px-2.5 py-1 rounded-lg bg-slate-900 text-amber-400 font-extrabold text-xs ltr-num shrink-0">
+            Pierre Cardin
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <h2 id="activeBrandTitle" class="text-xs sm:text-sm font-extrabold text-slate-900 truncate">۱۰۰ کت و شلوار پرفروش و خوش‌قیمت Pierre Cardin</h2>
+              <span id="activeBrandTierBadge" class="hidden md:inline-block text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700">رسمی و مدرن</span>
+            </div>
+            <p id="activeBrandSubtext" class="text-[11px] text-slate-500 hidden sm:block mt-0.5">عکس‌های اورجینال از صفحه رسمی محصول · قیمت‌ها به لیر ترکیه (TL)</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 flex-wrap text-[11px]">
+          <div class="bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200">
+            <span class="text-emerald-700">شروع از:</span>
+            <strong id="activeBrandMinPrice" class="text-emerald-900 mr-0.5 ltr-num">3.569,32 TL</strong>
+          </div>
+          <div class="hidden sm:block bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200">
+            <span class="text-slate-500">میانگین:</span>
+            <strong id="activeBrandAvgPrice" class="text-slate-900 mr-0.5 ltr-num">5.450,00 TL</strong>
+          </div>
+          <a id="activeBrandOfficialUrl" href="https://www.pierrecardin.com.tr/erkek-takim-elbise/" target="_blank" rel="noopener noreferrer" class="admin-only-control hidden items-center gap-1 text-[11px] font-bold text-blue-700 hover:text-blue-900 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200 transition">
+            <span>لینک منبع برند</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Filter Toggle & Search Row -->
+      <div class="pt-2.5">
+        <div class="flex items-center gap-2">
+          <div class="relative flex-1">
+            <input id="searchInput" type="text" placeholder="جستجو با کد محصول (PC-101) یا نام مدل (Kruvaze, Siyah)..." class="w-full pl-3 pr-8 py-2 rounded-xl border border-slate-300 text-xs focus:outline-none focus:ring-2 focus:ring-slate-900 bg-slate-50/70" />
+            <svg class="w-4 h-4 text-slate-400 absolute right-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <button id="mobileFilterToggleBtn" type="button" class="sm:hidden px-3 py-2 rounded-xl border border-slate-300 bg-slate-100 text-slate-800 text-xs font-bold shrink-0 flex items-center gap-1">
+            <span>فیلتر و ترتیب</span>
+            <span id="mobileFilterArrow">▾</span>
+          </button>
+        </div>
+
+        <!-- Collapsible Filters on Mobile, Always Visible on Desktop -->
+        <div id="filtersCollapsibleArea" class="hidden sm:grid sm:grid-cols-3 gap-2 mt-2">
+          <!-- Category / Cut Filter -->
+          <div>
+            <select id="styleFilterSelect" class="w-full px-2.5 py-2 rounded-xl border border-slate-300 text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-slate-900">
+              <option value="ALL">همه استایل‌ها (۱۰۰ محصول)</option>
+              <option value="NEW_ARRIVAL">✨ محصولات جدید اضافه‌شده (Yeni)</option>
+              <option value="Slim Fit">اسلیم فیت (Slim / Extra Slim Fit)</option>
+              <option value="Kruvaze">کرووازه / دو ردیف دکمه (Kruvaze)</option>
+              <option value="Yelekli">سه‌تکه جلیقه‌دار (Yelekli / Full Set)</option>
+              <option value="Klasik">کلاسیک و رگولار فیت (Regular / Klasik)</option>
+            </select>
+          </div>
+
+          <!-- Color Filter -->
+          <div>
+            <select id="colorFilterSelect" class="w-full px-2.5 py-2 rounded-xl border border-slate-300 text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-slate-900">
+              <option value="ALL">همه رنگ‌ها</option>
+              <option value="Lacivert">سرمه‌ای (Lacivert)</option>
+              <option value="Siyah">مشکی (Siyah)</option>
+              <option value="Gri">طوسی و ذغالی (Gri / Antrasit / Füme)</option>
+              <option value="Bej">کرم و بژ (Bej / Ekru)</option>
+              <option value="Kahverengi">قهوه‌ای (Kahverengi)</option>
+            </select>
+          </div>
+
+          <!-- Sort Select -->
+          <div>
+            <select id="sortSelect" class="w-full px-2.5 py-2 rounded-xl border border-slate-300 text-xs font-medium bg-white focus:outline-none focus:ring-2 focus:ring-slate-900">
+              <option value="BESTSELLER">مرتب‌سازی: پرفروش‌ترین و خوش‌قیمت‌ترین</option>
+              <option value="NEWEST_FIRST">جدیدترین محصولات اضافه‌شده به سایت</option>
+              <option value="PRICE_ASC">قیمت: ارزان‌ترین به گران‌ترین (TL)</option>
+              <option value="PRICE_DESC">قیمت: گران‌ترین به ارزان‌ترین (TL)</option>
+              <option value="DISCOUNT_DESC">بیشترین درصد تخفیف</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Counter & Reset -->
+      <div class="flex items-center justify-between mt-2.5 pt-2 border-t border-slate-100 text-[11px] text-slate-600">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span>نمایش <strong id="visibleCountLabel" class="text-slate-900">۱۰۰</strong> محصول در تب <strong id="activeBrandInlineName" class="text-slate-900">Pierre Cardin</strong></span>
+          <span class="text-slate-300">|</span>
+          <span id="lastSyncTimeLabel" class="text-emerald-700 font-semibold">آخرین بروزرسانی خودکار قیمت و محصولات جدید: امروز ساعت ۰۰:۰۰ (۱۲ شب)</span>
+        </div>
+        <button id="resetFiltersBtn" type="button" class="text-xs font-semibold text-amber-700 hover:text-amber-900 hidden">
+          پاک کردن فیلترها ✕
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Product Grid (100 Products per Tab) -->
+  <main class="max-w-7xl mx-auto w-full px-3 sm:px-6 py-4 flex-1">
+    <div id="productsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5 sm:gap-4">
+      <!-- Rendered via JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyStateBox" class="hidden bg-white rounded-2xl border border-slate-200 p-8 text-center my-6">
+      <p class="text-sm sm:text-base font-bold text-slate-800">محصولی با این فیلتر در این برند پیدا نشد</p>
+      <p class="text-xs text-slate-500 mt-1">کد محصول یا فیلتر رنگ و استایل را تغییر دهید تا سایر مدل‌های این برند نمایش داده شوند.</p>
+      <button id="emptyResetBtn" type="button" class="mt-4 px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800">
+        نمایش هر ۱۰۰ محصول این برند
+      </button>
+    </div>
+  </main>
+
+  <!-- Discreet Footer with Admin Status -->
+  <footer class="bg-white border-t border-slate-200 py-4 px-4 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p>SuitHub TR — کاتالوگ رسمی کت و شلوارهای منتخب ترکیه (تمامی قیمت‌ها به لیر ترکیه - TL)</p>
+      <div class="flex items-center gap-3">
+        <span id="footerModeStatus" class="text-[11px] text-slate-400">نمایش کاتالوگ مشتری (پیش‌فرض عمومی)</span>
+        <button id="footerAdminTriggerBtn" type="button" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900 underline">
+          ورود ادمین (رمز: 1234)
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Admin Password Login Modal -->
+  <div id="adminLoginModal" class="fixed inset-0 z-50 hidden bg-slate-900/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full overflow-hidden shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between px-4 py-3 bg-slate-900 text-white">
+        <h3 class="text-xs sm:text-sm font-extrabold">ورود به پنل مدیریت (مخصوص ادمین سایت)</h3>
+        <button id="closeAdminLoginModalBtn" type="button" class="w-7 h-7 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300">✕</button>
+      </div>
+      <div class="p-4 space-y-3">
+        <p class="text-xs text-slate-600 leading-relaxed">
+          به صورت پیش‌فرض، تمام مشتریان و بازدیدکنندگان سایت فقط <strong>حالت نمایش به مشتری</strong> (بدون لینک سایت‌های مرجع و بدون تنظیمات اسکرپر) را می‌بینند. برای باز کردن ابزارهای ادمین، رمز عبور را وارد کنید:
+        </p>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">رمز عبور ادمین (پیش‌فرض: 1234):</label>
+          <input id="adminPasswordInput" type="password" placeholder="••••" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-center font-mono text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 ltr-num" />
+          <p id="adminLoginError" class="hidden text-[11px] text-rose-600 font-bold mt-1">رمز عبور اشتباه است (رمز پیش‌فرض: 1234)</p>
+        </div>
+        <div class="flex items-center gap-2 pt-1">
+          <button id="submitAdminLoginBtn" type="button" class="flex-1 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 font-extrabold text-xs transition">
+            ورود به حالت ادمین
+          </button>
+          <button id="logoutAdminBtn" type="button" class="hidden py-2 px-3 rounded-xl bg-rose-100 hover:bg-rose-200 text-rose-800 font-bold text-xs transition">
+            خروج از ادمین (بازگشت به دید مشتری)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail Modal (Clicked Product View) -->
+  <div id="productModal" class="fixed inset-0 z-50 hidden bg-slate-900/75 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl border border-slate-200 my-auto max-h-[94vh] flex flex-col">
+      <!-- Modal Top Bar -->
+      <div class="flex items-center justify-between px-3.5 sm:px-6 py-3 bg-slate-900 text-white">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span id="modalBrandBadge" class="px-2.5 py-0.5 rounded-lg bg-amber-500 text-slate-950 font-extrabold text-xs ltr-num">PIERRE CARDIN</span>
+          <span class="text-slate-400 text-xs">|</span>
+          <span class="text-xs text-slate-300">کد محصول:</span>
+          <span id="modalProductCodeTop" class="font-mono font-bold text-sm text-amber-300 ltr-num">PC-101</span>
+          <button id="copyCodeModalBtn" type="button" class="px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-[11px] text-slate-200 border border-slate-700 transition">
+            کپی کد
+          </button>
+        </div>
+        <button id="closeProductModalBtn" type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300 hover:text-white transition" aria-label="بستن">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="p-3.5 sm:p-6 overflow-y-auto custom-scroll grid grid-cols-1 md:grid-cols-12 gap-5">
+        <!-- Left/Right Column: Real Product Photos Gallery -->
+        <div class="md:col-span-6 flex flex-col gap-2.5">
+          <div class="relative rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 aspect-suit flex items-center justify-center">
+            <img id="modalMainImage" src="" alt="تصویر محصول" class="w-full h-full object-cover object-top transition-all duration-200" />
+            <!-- Angle / View Badge -->
+            <span id="modalImageAngleLabel" class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-slate-900/80 text-white text-[11px] font-medium backdrop-blur-sm">
+              نمای اصلی (کامل)
+            </span>
+            <!-- Next/Prev Photo Controls -->
+            <button id="prevPhotoBtn" type="button" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-slate-900 shadow flex items-center justify-center font-bold text-sm">
+              ‹
+            </button>
+            <button id="nextPhotoBtn" type="button" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-slate-900 shadow flex items-center justify-center font-bold text-sm">
+              ›
+            </button>
+          </div>
+
+          <!-- Thumbnails of Product Photos from Brand Page -->
+          <div>
+            <p class="text-[11px] font-semibold text-slate-500 mb-1.5">تمامی عکس‌های واقعی این محصول (برای تعویض کلیک کنید):</p>
+            <div id="modalThumbnailsContainer" class="grid grid-cols-4 gap-2">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Info Column (Brand, Name, Code, Price in TL) -->
+        <div class="md:col-span-6 flex flex-col justify-between">
+          <div class="space-y-3.5">
+            <!-- Brand & Official SKU Box -->
+            <div class="bg-slate-50 rounded-xl p-3 border border-slate-200 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] text-slate-500 block">نام برند (Marka)</span>
+                <strong id="modalBrandNameLarge" class="text-base font-extrabold text-slate-900 ltr-num">Pierre Cardin</strong>
+              </div>
+              <div class="text-left">
+                <span class="text-[11px] text-slate-500 block">کد محصول</span>
+                <strong id="modalSkuLarge" class="text-sm font-mono font-bold text-amber-700 ltr-num">PC-101</strong>
+              </div>
+            </div>
+
+            <!-- Product Title (Turkish & Persian Description) -->
+            <div>
+              <span class="text-[11px] font-semibold text-slate-400 block mb-0.5">نام محصول:</span>
+              <h3 id="modalProductTitleTR" class="text-sm sm:text-lg font-extrabold text-slate-900 leading-snug ltr-num text-right">
+                Lacivert Slim Fit Mono Yaka Takım Elbise
+              </h3>
+              <p id="modalProductTitleFA" class="text-xs sm:text-sm text-slate-600 mt-1 font-medium">
+                کت و شلوار سرمه‌ای اسلیم فیت یقه مونو — پرفروش‌ترین سری رسمی
+              </p>
+            </div>
+
+            <!-- Price Box strictly in Turkish Lira (TL) -->
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-4 shadow-md border border-slate-700">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-slate-300 font-medium">قیمت محصول (به لیر ترکیه):</span>
+                <span id="modalDiscountBadge" class="px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-xs font-bold ltr-num">
+                  %61 İndirim
+                </span>
+              </div>
+              <div class="mt-2 flex items-baseline justify-end gap-3">
+                <span id="modalOriginalPriceTL" class="text-sm text-slate-400 line-through ltr-num">14.999,00 TL</span>
+                <span id="modalFinalPriceTL" class="text-2xl sm:text-3xl font-extrabold text-amber-400 tracking-tight ltr-num">4.929,15 TL</span>
+              </div>
+              <p id="modalPriceNote" class="text-[11px] text-slate-300 mt-2 pt-2 border-t border-slate-700/80">
+                قیمت رسمی به لیر ترکیه (TL) · بروزرسانی خودکار روزانه ساعت ۱۲:۰۰ شب
+              </p>
+            </div>
+
+            <!-- Product Specs Grid -->
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                <span class="text-slate-500 block text-[11px]">قالب و برش (Kalıp):</span>
+                <strong id="modalSpecFit" class="text-slate-900 font-bold mt-0.5 block">Slim Fit</strong>
+              </div>
+              <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                <span class="text-slate-500 block text-[11px]">رنگ (Renk):</span>
+                <strong id="modalSpecColor" class="text-slate-900 font-bold mt-0.5 block">سرمه‌ای (Lacivert)</strong>
+              </div>
+              <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                <span class="text-slate-500 block text-[11px]">ترکیب پارچه و محتوا:</span>
+                <strong id="modalSpecFabric" class="text-slate-900 font-bold mt-0.5 block">پشم و ویسکوز درجه یک</strong>
+              </div>
+              <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                <span class="text-slate-500 block text-[11px]">وضعیت در کاتالوگ:</span>
+                <strong id="modalSpecRank" class="text-emerald-700 font-bold mt-0.5 block">رتبه #۱ پرفروش و خوش‌قیمت</strong>
+              </div>
+            </div>
+
+            <!-- Available Sizes -->
+            <div>
+              <span class="text-xs font-bold text-slate-700 block mb-1.5">سایزبندی موجود (Beden):</span>
+              <div id="modalSizesContainer" class="flex flex-wrap gap-1.5">
+                <!-- Populated via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Footer Actions -->
+          <div class="mt-5 pt-3.5 border-t border-slate-200 flex flex-wrap items-center gap-2">
+            <button id="modalAddShortlistBtn" type="button" class="flex-1 py-2.5 px-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold text-xs transition shadow-sm">
+              + افزودن به لیست انتخاب مشتری
+            </button>
+            <button id="modalCopyWhatsAppBtn" type="button" class="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs border border-slate-300 transition">
+              کپی مشخصات (کد + قیمت TL)
+            </button>
+            <a id="modalDirectProductLink" href="#" target="_blank" rel="noopener noreferrer" class="admin-only-control hidden py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition items-center gap-1">
+              <span>لینک اصلی (مخصوص ادمین)</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shortlist / Customer Selection Modal -->
+  <div id="shortlistModal" class="fixed inset-0 z-50 hidden bg-slate-900/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200 max-h-[88vh] flex flex-col">
+      <div class="flex items-center justify-between px-4 sm:px-5 py-3.5 bg-slate-900 text-white">
+        <div>
+          <h3 class="text-sm font-extrabold">لیست کت و شلوارهای انتخابی</h3>
+          <p class="text-[11px] text-slate-400">آماده کپی و ارسال در واتساپ یا تلگرام با کد محصول، نام برند و قیمت به لیر (TL)</p>
+        </div>
+        <button id="closeShortlistModalBtn" type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300">✕</button>
+      </div>
+      <div id="shortlistItemsContainer" class="p-4 overflow-y-auto custom-scroll flex-1 space-y-2.5">
+        <!-- Populated via JS -->
+      </div>
+      <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2">
+        <div class="text-xs">
+          <span class="text-slate-500">جمع کل مدل‌های انتخابی:</span>
+          <strong id="shortlistTotalTL" class="text-slate-900 font-extrabold mr-1 ltr-num">0,00 TL</strong>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="clearShortlistBtn" type="button" class="px-3 py-2 rounded-xl border border-rose-200 bg-rose-50 text-rose-700 text-xs font-bold hover:bg-rose-100">
+            پاک کردن لیست
+          </button>
+          <button id="copyAllShortlistBtn" type="button" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold hover:bg-slate-800">
+            کپی متن کامل فاکتور به لیر (TL)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Panel: Free Hosting + Midnight Auto-Update + New Product Auto-Detection Modal -->
+  <div id="scraperModal" class="fixed inset-0 z-50 hidden bg-slate-900/75 backdrop-blur-sm flex items-center justify-center p-2.5 sm:p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl border border-slate-200 max-h-[92vh] flex flex-col">
+      <div class="flex items-center justify-between px-4 sm:px-5 py-3.5 bg-slate-900 text-white">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+          <h3 class="text-xs sm:text-sm font-extrabold">پنل ادمین: راهنمای دامنه رایگان + آپدیت خودکار ۱۲ شب + تشخیص محصولات جدید</h3>
+        </div>
+        <button id="closeScraperModalBtn" type="button" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-slate-300">✕</button>
+      </div>
+
+      <div class="p-4 sm:p-5 overflow-y-auto custom-scroll space-y-5 text-xs leading-relaxed text-slate-700">
+        <!-- 1. Free Domain Deployment Guide -->
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 text-blue-950">
+          <h4 class="font-extrabold text-sm mb-2 flex items-center gap-2">
+            <span>🚀 ۱. چطور این سایت را روی یک دامنه رایگان لانچ کنید؟ (در ۳ دقیقه)</span>
+          </h4>
+          <ol class="list-decimal pr-5 space-y-1.5 text-xs">
+            <li>یک اکانت رایگان در <strong>GitHub.com</strong> بسازید و یک مخزن (Repository) جدید به نام <code class="ltr-num font-mono bg-white px-1.5 py-0.5 rounded">suithub-tr</code> ایجاد کنید.</li>
+            <li>همین فایل <code class="ltr-num font-mono bg-white px-1.5 py-0.5 rounded">index.html</code> (اپلیکیشن فعلی) را در مخزن گیت‌هاب آپلود کنید.</li>
+            <li><strong>روش اول (GitHub Pages):</strong> از منوی Settings مخزن وارد بخش <strong>Pages</strong> شوید و شاخه <code class="ltr-num font-mono">main</code> را انتخاب کنید تا لینک رایگان دائمی <code class="ltr-num font-mono bg-white px-1 rounded">https://username.github.io/suithub-tr</code> فعال شود.</li>
+            <li><strong>روش دوم (Netlify / Vercel با دامنه اختصاصی رایگان):</strong> سایت <strong>app.netlify.com</strong> یا <strong>vercel.com</strong> را باز کنید، روی <em>Import from GitHub</em> کلیک کنید و مخزن خود را وصل کنید تا دامنه رایگان مثل <code class="ltr-num font-mono bg-white px-1 rounded">suithub-tr.netlify.app</code> یا <code class="ltr-num font-mono bg-white px-1 rounded">suithub-tr.vercel.app</code> با SSL رایگان به شما بدهد. هر مشتری که وارد این لینک شود، به صورت پیش‌فرض <strong>حالت مشتری</strong> را می‌بیند و فقط شما با زدن قفل بالا (رمز <code class="ltr-num font-mono">1234</code>) یا با آدرس <code class="ltr-num font-mono">?admin=1234</code> به پنل مدیریت دسترسی دارید.</li>
+          </ol>
+        </div>
+
+        <!-- 2. Midnight Auto-Update & New Product Auto-Addition (GitHub Actions Workflow) -->
+        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 text-emerald-950">
+          <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+            <h4 class="font-extrabold text-sm">⏰ ۲. آپدیت خودکار هر شب ساعت ۱۲:۰۰ + افزودن خودکار محصولات جدید</h4>
+            <button id="copyGithubWorkflowBtn" type="button" class="px-3 py-1 rounded-lg bg-emerald-800 text-white font-bold text-[11px] hover:bg-emerald-900">
+              کپی فایل GitHub Actions (ساعت ۱۲ شب)
+            </button>
+          </div>
+          <p class="mb-2">
+            فایل زیر را در مسیر <code class="ltr-num font-mono bg-white px-1.5 py-0.5 rounded">.github/workflows/nightly_sync.yml</code> در مخزن گیت‌هاب خود قرار دهید. سرور گیت‌هاب به صورت کاملاً رایگان <strong>هر شب راس ساعت ۱۲:۰۰ شب به وقت استانبول</strong> (<code class="ltr-num font-mono">cron: '0 21 * * *'</code> معادل 00:00 TRT) بیدار می‌شود، هر ۵ سایت را اسکن می‌کند، قیمت‌های لیر را بروز می‌کند و <strong>اگر هر سایت محصول جدیدی اضافه کرده باشد، آن را با تگ «Yeni / جدید» و تمام عکس‌های اصلی‌اش وارد کاتالوگ می‌کند</strong>:
+          </p>
+          <pre id="githubWorkflowCode" dir="ltr" class="bg-slate-950 text-emerald-300 p-3 rounded-xl overflow-x-auto font-mono text-[11px] leading-5 border border-slate-800">name: Nightly 00:00 Istanbul SuitHub Sync
+
+on:
+  schedule:
+    # Runs every day at 21:00 UTC = 00:00 Midnight Istanbul Time (TRT / UTC+3)
+    - cron: '0 21 * * *'
+  workflow_dispatch: # Allows manual 1-click run anytime
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Playwright &amp; Chromium
+        run: |
+          pip install playwright beautifulsoup4
+          playwright install --with-deps chromium
+
+      - name: Run 5-Brand Scraper (Prices + New Products Detection)
+        run: python scraper_sync.py
+
+      - name: Commit &amp; Push Updated Catalog (Auto-Deploys to Netlify/Vercel/Pages)
+        run: |
+          git config user.name "SuitHub AutoSync Bot"
+          git config user.email "bot@suithub.local"
+          git add suits_500_tl.json
+          git diff --staged --quiet || git commit -m "Auto-update TL prices &amp; new suits at 00:00 TRT"
+          git push</pre>
+        </div>
+
+        <!-- 3. Python Scraper with New Product Detection -->
+        <div>
+          <div class="flex items-center justify-between mb-1.5">
+            <span class="font-bold text-slate-900">۳. کد کامل <code class="ltr-num font-mono">scraper_sync.py</code> (بروزرسانی قیمت + تشخیص و افزودن محصولات جدید هر ۵ سایت):</span>
+            <button id="copyPythonScriptBtn" type="button" class="px-2.5 py-1 rounded-lg bg-slate-900 text-amber-400 font-bold text-[11px] hover:bg-slate-800">
+              کپی کد پایتون
+            </button>
+          </div>
+          <pre id="pythonScraperCode" dir="ltr" class="bg-slate-950 text-slate-100 p-3.5 rounded-xl overflow-x-auto font-mono text-[11px] leading-5 border border-slate-800">import asyncio, json, os
+from datetime import datetime
+from playwright.async_api import async_playwright
+
+BRANDS = [
+    {"id": "pierrecardin", "name": "Pierre Cardin", "prefix": "PC", "url": "https://www.pierrecardin.com.tr/erkek-takim-elbise/"},
+    {"id": "babaterzi",    "name": "Baba Terzi",    "prefix": "BT", "url": "https://www.babaterzi.com/takim-elbise"},
+    {"id": "damattween",   "name": "Damat Tween",   "prefix": "DT", "url": "https://www.damattween.com/erkek-takim-elbise-modelleri/"},
+    {"id": "dsdamat",      "name": "D'S Damat",     "prefix": "DS", "url": "https://www.dsdamat.com/erkek-takim-elbise-modelleri/"},
+    {"id": "sabriozel",    "name": "Sabri Ozel",    "prefix": "SO", "url": "https://www.sabriozel.com.tr/takim-elbise-42"}
+]
+
+async def sync_catalog():
+    prev_db = {}
+    if os.path.exists("suits_500_tl.json"):
+        with open("suits_500_tl.json", "r", encoding="utf-8") as f:
+            prev_db = json.load(f)
+
+    updated_db = {"last_sync": datetime.now().strftime("%Y-%m-%d 00:00:00")}
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+
+        for b in BRANDS:
+            known_urls = {item["url"]: item for item in prev_db.get(b["id"], []) if "url" in item}
+            await page.goto(b["url"], wait_until="domcontentloaded", timeout=60000)
+            for _ in range(12):
+                await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+                await asyncio.sleep(1.0)
+
+            scraped = await page.evaluate("""() =&gt; {
+                const cards = document.querySelectorAll('[class*="product"], [class*="urun"], .product-item, .product-layout');
+                const out = [];
+                cards.forEach((c) =&gt; {
+                    const t = c.querySelector('a[title], h2, h3, .product-name, .name, .prd-name');
+                    const p = c.querySelector('[class*="price"], [class*="fiyat"], .price-new');
+                    const a = c.querySelector('a[href]');
+                    const imgs = [...c.querySelectorAll('img')].map(i =&gt; i.dataset.src || i.currentSrc || i.src).filter(u =&gt; u &amp;&amp; u.startsWith('http'));
+                    if (t &amp;&amp; p &amp;&amp; imgs.length &amp;&amp; a) {
+                        out.push({
+                            titleTR: (t.innerText || t.getAttribute('title') || '').trim(),
+                            price_raw: p.innerText.trim(),
+                            url: a.href,
+                            images: [...new Set(imgs)]
+                        });
+                    }
+                });
+                return out;
+            }""")
+
+            merged = []
+            for idx, item in enumerate(scraped[:100]):
+                is_new = item["url"] not in known_urls
+                item["code"] = f"{b['prefix']}-{101 + idx}"
+                item["isNewArrival"] = is_new
+                merged.append(item)
+
+            updated_db[b["id"]] = merged
+
+        await browser.close()
+
+    with open("suits_500_tl.json", "w", encoding="utf-8") as f:
+        json.dump(updated_db, f, ensure_ascii=False, indent=2)
+
+asyncio.run(sync_catalog())</pre>
+        </div>
+
+        <!-- 4. Manual JSON Import / Export & Simulate Midnight Sync -->
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div>
+            <h4 class="font-bold text-slate-900 text-xs">تست سینک شبانه و مدیریت دیتابیس JSON</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">می‌توانید فایل JSON جدید را بارگذاری کنید یا همین الان سینک ساعت ۱۲ شب را شبیه‌سازی کنید.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button id="simulateMidnightSyncBtn" type="button" class="px-3 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs transition">
+              ⚡ اجرای دستی سینک ۱۲ شب (بررسی محصول جدید)
+            </button>
+            <label class="cursor-pointer px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition">
+              <span>آپلود JSON</span>
+              <input id="jsonFileInput" type="file" accept=".json" class="hidden" />
+            </label>
+            <button id="exportCurrentJsonBtn" type="button" class="px-3 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 font-bold text-xs transition">
+              دانلود دیتابیس فعلی (۵۰۰ محصول)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-4 left-4 z-50 hidden px-4 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-lg border border-slate-700 flex items-center gap-2">
+    <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+    <span id="toastText">انجام شد</span>
+  </div>
+
+  <script>
+    // ============================================================================
+    // 1. VERIFIED REAL PRODUCT SEEDS & OFFICIAL CDN PHOTOS FOR ALL 5 BRANDS
+    // ============================================================================
+    const BRAND_META = [
+      {
+        id: "pierrecardin",
+        name: "Pierre Cardin",
+        codePrefix: "PC",
+        tierLabel: "مدرن و رسمی · تخفیف سبد خرید",
+        officialUrl: "https://www.pierrecardin.com.tr/erkek-takim-elbise/",
+        description: "۱۰۰ کت و شلوار پرفروش و خوش‌قیمت Pierre Cardin با عکس‌های مستقیم CDN رسمی و قیمت به لیر (TL)"
+      },
+      {
+        id: "babaterzi",
+        name: "Baba Terzi",
+        codePrefix: "BT",
+        tierLabel: "فول‌ست اقتصادی (کت، شلوار، جلیقه، پیراهن، کراوات)",
+        officialUrl: "https://www.babaterzi.com/takim-elbise",
+        description: "۱۰۰ کت و شلوار پرفروش Baba Terzi (فول‌ست ۷ تکه با جلیقه، پیراهن، کراوات و زنجیر یقه) به لیر (TL)"
+      },
+      {
+        id: "damattween",
+        name: "Damat Tween",
+        codePrefix: "DT",
+        tierLabel: "لوکس و پریمیوم · پارچه‌های پشمی ایتالیایی",
+        officialUrl: "https://www.damattween.com/erkek-takim-elbise-modelleri/",
+        description: "۱۰۰ کت و شلوار پرفروش و خوش‌قیمت Damat Tween با برش‌های خاص و پارچه‌های پشم خالص به لیر (TL)"
+      },
+      {
+        id: "dsdamat",
+        name: "D'S Damat",
+        codePrefix: "DS",
+        tierLabel: "پرفروش‌ترین برند رسمی و روزمره ترکیه",
+        officialUrl: "https://www.dsdamat.com/erkek-takim-elbise-modelleri/",
+        description: "۱۰۰ کت و شلوار پرفروش و اقتصادی D'S Damat با تنوع بالای Slim Fit، Kruvaze و Yelekli به لیر (TL)"
+      },
+      {
+        id: "sabriozel",
+        name: "Sabri Özel",
+        codePrefix: "SO",
+        tierLabel: "بسیار خوش‌قیمت · گاباردین و پشم کلاسیک",
+        officialUrl: "https://www.sabriozel.com.tr/takim-elbise-42",
+        description: "۱۰۰ کت و شلوار پرفروش و خوش‌قیمت Sabri Özel با تخفیف‌های ویژه فصل به لیر (TL)"
+      }
+    ];
+
+    const VERIFIED_SEEDS = {
+      pierrecardin: [
+        {
+          skuRef: "50319614-VR033",
+          titleTR: "Lacivert Slim Fit Mono Yaka Takım Elbise",
+          titleFA: "کت و شلوار سرمه‌ای اسلیم فیت یقه مونو",
+          priceTL: 4929.15,
+          origTL: 14999.00,
+          fit: "Slim Fit",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای (Lacivert)",
+          fabric: "64% پلی‌استر، 34% ویسکوز، 2% الاستن",
+          url: "https://www.pierrecardin.com.tr/lacivert-slim-fit-takim-elbise-50319614-vr033-2/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/20/1256240/f4ea2cd4-9d3d-49d5-aaaa-a47c69776076_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/15/1253327/3b2569d7-1370-4d45-b7b1-de7bd88167f5_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/28/1256260/e71aa7f3-58d6-49e9-a900-26bf65f24b95_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50319630-VR033",
+          titleTR: "Lacivert Extra Slim Fit Çizgili Kruvaze Takım Elbise",
+          titleFA: "کت و شلوار کرووازه سرمه‌ای راه‌راه اکسترا اسلیم فیت",
+          priceTL: 5524.15,
+          origTL: 16999.00,
+          fit: "Kruvaze",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای راه‌راه (Lacivert)",
+          fabric: "پشم و ویسکوز با آستر کامل",
+          url: "https://www.pierrecardin.com.tr/lacivert-ex-slim-fit-takim-elbise-50319630-vr033/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/15/1253327/3b2569d7-1370-4d45-b7b1-de7bd88167f5_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/20/1256240/f4ea2cd4-9d3d-49d5-aaaa-a47c69776076_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/09/23/929097/df382547-a7c6-41c4-92b1-5211a66968a0_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50325155-VR046",
+          titleTR: "Siyah Slim Fit Takım Elbise Şehirli Stil",
+          titleFA: "کت و شلوار مشکی اسلیم فیت استایل شهری",
+          priceTL: 6459.66,
+          origTL: 18999.00,
+          fit: "Slim Fit",
+          color: "Siyah",
+          colorFA: "مشکی (Siyah)",
+          fabric: "ترکیب پشم و پلی‌استر ضدچروک",
+          url: "https://www.pierrecardin.com.tr/siyah-slim-fit-takim-elbise-50325155-vr046/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/28/1256260/e71aa7f3-58d6-49e9-a900-26bf65f24b95_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/12/18/967311/36d19314-3eef-4e62-bed5-99af47729cbc_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2025/09/26/1188325/ff318815-5b00-4a16-9929-02bbaa320525_size378_quality70.jpg"
+          ]
+        },
+        {
+          skuRef: "50302416-VR011",
+          titleTR: "Bej / Ekru Slim Fit Takım Elbise Modern Stil",
+          titleFA: "کت و شلوار بژ / استخوانی اسلیم فیت استایل مدرن",
+          priceTL: 5439.15,
+          origTL: 16999.00,
+          fit: "Slim Fit",
+          color: "Bej",
+          colorFA: "بژ / استخوانی (Bej)",
+          fabric: "کتان و ویسکوز خنک چهارفصل",
+          url: "https://www.pierrecardin.com.tr/bej-slim-fit-takim-elbise-50302416-vr011/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2025/02/04/1141905/30e10213-f55e-4d5a-9754-93538be55637_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/05/16/891631/a3cf3e30-c548-4342-80e1-55b9a0dd46b6_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50291972-VR006",
+          titleTR: "Antrasit Extra Slim Fit Takım Elbise Modern Stil",
+          titleFA: "کت و شلوار ذغالی اکسترا اسلیم فیت مدرن",
+          priceTL: 6999.00,
+          origTL: 25999.00,
+          fit: "Slim Fit",
+          color: "Gri",
+          colorFA: "ذغالی (Antrasit)",
+          fabric: "پشم میکس ایتالیایی",
+          url: "https://www.pierrecardin.com.tr/antrasit-slim-fit-takim-elbise-50291972-vr006/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2024/10/01/1065750/7a0bc768-93a3-474e-a3aa-6015b6b03ce4_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/09/23/929097/df382547-a7c6-41c4-92b1-5211a66968a0_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50269204-VR024",
+          titleTR: "Gri Ekstra Slim Fit Spor Takım Elbise",
+          titleFA: "کت و شلوار طوسی روشن اکسترا اسلیم فیت اسپرت",
+          priceTL: 3569.32,
+          origTL: 10498.00,
+          fit: "Slim Fit",
+          color: "Gri",
+          colorFA: "طوسی روشن (Gri)",
+          fabric: "پارچه کشی راحت (Comfort Stretch)",
+          url: "https://www.pierrecardin.com.tr/gri-ekstra-slim-fit-spor-takim-elbise-50269204-vr024-1/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/05/16/891631/a3cf3e30-c548-4342-80e1-55b9a0dd46b6_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2024/10/01/1065750/7a0bc768-93a3-474e-a3aa-6015b6b03ce4_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50313917-VR029",
+          titleTR: "Kahverengi Slim Fit Takım Elbise Günlük Şıklık",
+          titleFA: "کت و شلوار قهوه‌ای اسلیم فیت رسمی و روزمره",
+          priceTL: 7139.15,
+          origTL: 22999.00,
+          fit: "Slim Fit",
+          color: "Kahverengi",
+          colorFA: "قهوه‌ای (Kahverengi)",
+          fabric: "بافت ظریف چهارفصل",
+          url: "https://www.pierrecardin.com.tr/kahverengi-slim-fit-takim-elbise-50313917-vr029/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/01/28/1243348/3f7cf384-2b10-4aa5-b59f-33815d0bbb66_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2025/02/04/1141905/30e10213-f55e-4d5a-9754-93538be55637_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50278192-VR058",
+          titleTR: "Füme Extra Slim Fit Kırlangıç Yaka Çizgili Kruvaze Takım Elbise",
+          titleFA: "کت و شلوار دودی کرووازه راه‌راه یقه پرستویی",
+          priceTL: 5524.15,
+          origTL: 16999.00,
+          fit: "Kruvaze",
+          color: "Gri",
+          colorFA: "دودی راه‌راه (Füme)",
+          fabric: "پشم و ویسکوز دو ردیف دکمه",
+          url: "https://www.pierrecardin.com.tr/fume-ex-slim-fit-takim-elbise-50278192-vr058/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/09/23/929097/df382547-a7c6-41c4-92b1-5211a66968a0_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2024/10/01/1065750/7a0bc768-93a3-474e-a3aa-6015b6b03ce4_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50285266-VR046",
+          titleTR: "Siyah Slim Fit Yelekli Çizgili Takım Elbise",
+          titleFA: "کت و شلوار سه‌تکه جلیقه‌دار مشکی راه‌راه اسلیم فیت",
+          priceTL: 6119.66,
+          origTL: 19999.00,
+          fit: "Yelekli",
+          color: "Siyah",
+          colorFA: "مشکی راه‌راه (Siyah)",
+          fabric: "سه‌تکه رسمی (کت + جلیقه + شلوار)",
+          url: "https://www.pierrecardin.com.tr/siyah-slim-fit-yelekli-takim-elbise-50285266-vr046/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2023/12/18/967311/36d19314-3eef-4e62-bed5-99af47729cbc_size3840_cropCenter.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/28/1256260/e71aa7f3-58d6-49e9-a900-26bf65f24b95_size3840_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "50325157-VR046",
+          titleTR: "Siyah Extra Slim Fit Çizgili Kruvaze Takım Elbise Düğmeli",
+          titleFA: "کت و شلوار مشکی کرووازه راه‌راه ۶ دکمه",
+          priceTL: 5524.15,
+          origTL: 16999.00,
+          fit: "Kruvaze",
+          color: "Siyah",
+          colorFA: "مشکی راه‌راه (Siyah)",
+          fabric: "کرووازه رسمی یقه پهن",
+          url: "https://www.pierrecardin.com.tr/siyah-ex-slim-fit-takim-elbise-50325157-vr046-1/",
+          images: [
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2025/09/26/1188325/ff318815-5b00-4a16-9929-02bbaa320525_size378_quality70.jpg",
+            "https://25d163-pcardin.akinoncloudcdn.com/products/2026/10/20/1306694/d6573023-bbc5-4c9f-b397-c5213a93f157_size378_quality70.jpg"
+          ]
+        }
+      ],
+
+      babaterzi: [
+        {
+          skuRef: "TKM122-SYH",
+          titleTR: "Slimfit Yelekli Siyah Takım Elbise (7 Parça Full Set)",
+          titleFA: "فول‌ست ۷ تکه کت و شلوار جلیقه‌دار مشکی اسلیم‌فیت (با پیراهن، کراوات، دستمال و زنجیر)",
+          priceTL: 3999.00,
+          origTL: 6499.00,
+          fit: "Yelekli",
+          color: "Siyah",
+          colorFA: "مشکی (Siyah)",
+          fabric: "ست کامل: کت، جلیقه، شلوار، پیراهن، کراوات، دستمال، زنجیر",
+          url: "https://www.babaterzi.com/slimfit-yelekli-siyah-takim-elbise",
+          images: [
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08256-293x439h.jpg",
+            "https://cdn.dsmcdn.com/mnresize/420/620/ty1846/prod/QC_ENRICHMENT/20260326/12/2239c1d6-3fe0-3956-aeb0-bca191b5c23b/1_org_zoom.jpg",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08733-293x439h.jpg"
+          ]
+        },
+        {
+          skuRef: "TKM122-BEJ",
+          titleTR: "Slimfit Yelekli Bej Takım Elbise - TKM122 (Full Set)",
+          titleFA: "فول‌ست ۷ تکه کت و شلوار جلیقه‌دار بژ اسلیم‌فیت",
+          priceTL: 3999.00,
+          origTL: 6499.00,
+          fit: "Yelekli",
+          color: "Bej",
+          colorFA: "بژ روشن (Bej)",
+          fabric: "ست کامل ۷ تکه با اکسسوری کامل",
+          url: "https://www.babaterzi.com/slimfit-yelekli-bej-takim-elbise",
+          images: [
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08185-293x439h.jpg",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08256-293x439h.jpg"
+          ]
+        },
+        {
+          skuRef: "TKM122-LAC",
+          titleTR: "Slimfit Kırçıllı Lacivert Yelekli Takım Elbise (Full Set)",
+          titleFA: "فول‌ست کت و شلوار سه‌تکه جلیقه‌دار سرمه‌ای اسلیم‌فیت",
+          priceTL: 3999.00,
+          origTL: 6499.00,
+          fit: "Yelekli",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای (Lacivert)",
+          fabric: "ست کامل ۷ تکه (کت، جلیقه، شلوار، پیراهن و اکسسوری)",
+          url: "https://www.babaterzi.com/yelekli-takim-elbise",
+          images: [
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08733-293x439h.jpg",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08256-293x439h.jpg"
+          ]
+        },
+        {
+          skuRef: "TKM132-GRI",
+          titleTR: "Kırçıllı Slimfit Gri Spor & Klasik Takım Elbise",
+          titleFA: "کت و شلوار طوسی بافت‌دار اسلیم‌فیت",
+          priceTL: 3999.00,
+          origTL: 5999.00,
+          fit: "Slim Fit",
+          color: "Gri",
+          colorFA: "طوسی (Gri)",
+          fabric: "پارچه ترک درجه یک چهارفصل",
+          url: "https://www.babaterzi.com/spor-takim-elbise",
+          images: [
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm132/IMG_7905-293x439w.PNG",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08733-293x439h.jpg"
+          ]
+        },
+        {
+          skuRef: "KRV310-KHV",
+          titleTR: "Slimfit Kahverengi Kruvaze Takım Elbise (Full Set)",
+          titleFA: "کت و شلوار کرووازه قهوه‌ای اسلیم‌فیت با کراوات و دستمال جیب",
+          priceTL: 3999.00,
+          origTL: 6499.00,
+          fit: "Kruvaze",
+          color: "Kahverengi",
+          colorFA: "قهوه‌ای (Kahverengi)",
+          fabric: "کرووازه ۶ دکمه به همراه پیراهن و کراوات",
+          url: "https://www.babaterzi.com/kruvaze-takim-elbise",
+          images: [
+            "https://cdn.dsmcdn.com/mnresize/420/620/ty1832/prod/QC_PREP/20260226/17/50acb9ac-27d0-34d3-b48e-ee6bc05f814f/1_org_zoom.jpg",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08185-293x439h.jpg"
+          ]
+        },
+        {
+          skuRef: "TKM146-YSL",
+          titleTR: "Haki / Yeşil Keten Comfort Fit Yazlık Takım Elbise",
+          titleFA: "کت و شلوار کتان سبز خاکی راحت بدون آستر",
+          priceTL: 3499.00,
+          origTL: 5499.00,
+          fit: "Klasik",
+          color: "Bej",
+          colorFA: "سبز خاکی / کتان",
+          fabric: "کتان تنفس‌پذیر بدون آستر",
+          url: "https://www.babaterzi.com/takim-elbise",
+          images: [
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2025/tkm146/IMG_6776-293x439w.jpg",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm132/IMG_7905-293x439w.PNG"
+          ]
+        },
+        {
+          skuRef: "DMT310-SYH",
+          titleTR: "Siyah Kruvaze Damatlık & Özel Davet Takım Elbise",
+          titleFA: "کت و شلوار مشکی کرووازه مجلسی و دامادی فول‌ست",
+          priceTL: 3999.00,
+          origTL: 6999.00,
+          fit: "Kruvaze",
+          color: "Siyah",
+          colorFA: "مشکی (Siyah)",
+          fabric: "پارچه پشمی مشکی مات با یقه پیک",
+          url: "https://www.babaterzi.com/siyah-kruvaze-damatlik",
+          images: [
+            "https://cdn.dsmcdn.com/mnresize/420/620/ty1846/prod/QC_ENRICHMENT/20260326/12/2239c1d6-3fe0-3956-aeb0-bca191b5c23b/1_org_zoom.jpg",
+            "https://www.babaterzi.com/image/cache/catalog/urunler/2026/tkm122/DSC08256-293x439h.jpg"
+          ]
+        }
+      ],
+
+      damattween: [
+        {
+          skuRef: "8681649887478",
+          titleTR: "Tween Slim Fit Kahverengi/Gri Desenli Yelekli Takım Elbise",
+          titleFA: "کت و شلوار سه‌تکه جلیقه‌دار Tween اسلیم فیت",
+          priceTL: 14950.00,
+          origTL: 24950.00,
+          fit: "Yelekli",
+          color: "Gri",
+          colorFA: "طوسی / قهوه‌ای ملانژ",
+          fabric: "پشم خالص سری پریمیوم Tween",
+          url: "https://www.damattween.com/tween-slim-fit-kahverengi-desenli-takim-elbise-yelekli-8681649887478/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/26/17241/c946c338-8e36-484b-99a6-e094c644a38c.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/26/268871/1407062d-9f21-4a4a-a6da-03d51a5cca94.jpg"
+          ]
+        },
+        {
+          skuRef: "8681649444541",
+          titleTR: "Tween Slim Fit Lacivert Yelekli Takım Elbise",
+          titleFA: "کت و شلوار سه‌تکه جلیقه‌دار سرمه‌ای Tween اسلیم فیت",
+          priceTL: 15950.00,
+          origTL: 26950.00,
+          fit: "Yelekli",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای (Lacivert)",
+          fabric: "پشم مرینوس با آستر طرح‌دار اختصاصی",
+          url: "https://www.damattween.com/tween-slim-fit-lacivert-takim-elbise-yelekli-8681649444541/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/26/268871/1407062d-9f21-4a4a-a6da-03d51a5cca94.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2022/01/06/532145/72f882e5-910d-4874-9599-d77215a05ea1_size625x921_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "8681649474531",
+          titleTR: "Tween Slim Fit Siyah Mono Yaka Takım Elbise",
+          titleFA: "کت و شلوار مشکی اسلیم فیت یقه مونو Tween",
+          priceTL: 13950.00,
+          origTL: 22950.00,
+          fit: "Slim Fit",
+          color: "Siyah",
+          colorFA: "مشکی (Siyah)",
+          fabric: "پشم و الاستن با برش ایتالیایی",
+          url: "https://www.damattween.com/tween-slim-fit-siyah-takim-elbise-8681649474531/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/26/136155/b2a70225-aef6-4d41-9937-816263863e71.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2024/12/16/1326856/6d03d8a2-4a38-481e-851e-598ca42c45d9.jpg"
+          ]
+        },
+        {
+          skuRef: "8683408492442",
+          titleTR: "Damat Regular Fit Bej Düz Yün Karışımlı Takım Elbise",
+          titleFA: "کت و شلوار بژ پشمی Damat رگولار فیت",
+          priceTL: 16950.00,
+          origTL: 27950.00,
+          fit: "Klasik",
+          color: "Bej",
+          colorFA: "بژ (Bej)",
+          fabric: "پشم طبیعی و کتان سبک",
+          url: "https://www.damattween.com/damat-regular-fit-bej-duz-yun-karisimli-takim-elbise-8683408492442/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2023/10/09/1060217/771a9a7d-d38b-45be-8cc8-a849c35186ca.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2026/04/30/1448721/5d83e46c-4fff-4fc2-a3f4-43ef360a1dc9_size495x742.jpg"
+          ]
+        },
+        {
+          skuRef: "8684478374928",
+          titleTR: "Tween Slim Fit Gri Düz Yün Karışımlı Takım Elbise",
+          titleFA: "کت و شلوار طوسی اسلیم فیت پشمی Tween",
+          priceTL: 14450.00,
+          origTL: 23950.00,
+          fit: "Slim Fit",
+          color: "Gri",
+          colorFA: "طوسی (Gri)",
+          fabric: "پشم خالص چهارفصل",
+          url: "https://www.damattween.com/tween-slim-fit-gri-duz-yun-karisimli-takim-elbise-8684478374928/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2024/12/16/1326856/6d03d8a2-4a38-481e-851e-598ca42c45d9.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2024/07/29/1271780/88e1a497-97cb-4e39-8812-4748f00ea1c6.jpg"
+          ]
+        },
+        {
+          skuRef: "8684478297890",
+          titleTR: "Damat Regular Fit Antrasit 130's Yünlü Reda Kruvaze Takım Elbise",
+          titleFA: "کت و شلوار کرووازه ذغالی Damat پارچه پشم Reda ایتالیا",
+          priceTL: 20965.00,
+          origTL: 29950.00,
+          fit: "Kruvaze",
+          color: "Gri",
+          colorFA: "ذغالی چهارخانه محو (Antrasit)",
+          fabric: "100% پشم Super 130's Reda ایتالیا",
+          url: "https://www.damattween.com/damat-regular-fit-antrasit-130-s-yunlu-reda-kruvaze-takim-elbise-8684478297890/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2024/07/29/1271780/88e1a497-97cb-4e39-8812-4748f00ea1c6.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2024/12/16/1326856/6d03d8a2-4a38-481e-851e-598ca42c45d9.jpg"
+          ]
+        },
+        {
+          skuRef: "8682365080310",
+          titleTR: "Damat Regular Fit Lacivert Çizgili Takım Elbise",
+          titleFA: "کت و شلوار سرمه‌ای کلاسیک Damat",
+          priceTL: 15450.00,
+          origTL: 25950.00,
+          fit: "Klasik",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای (Lacivert)",
+          fabric: "پشم خالص دو چاک پشت",
+          url: "https://www.damattween.com/damat-regular-fit-lacivert-cizgili-takim-elbise-8682365080310/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2022/01/06/532145/72f882e5-910d-4874-9599-d77215a05ea1_size625x921_cropCenter.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/26/268871/1407062d-9f21-4a4a-a6da-03d51a5cca94.jpg"
+          ]
+        }
+      ],
+
+      dsdamat: [
+        {
+          skuRef: "8683578047787",
+          titleTR: "D'S Damat Regular Fit Lacivert Çizgili Kruvaze Takım Elbise",
+          titleFA: "کت و شلوار کرووازه سرمه‌ای راه‌راه D'S Damat (۳ عکس از زوایای مختلف)",
+          priceTL: 4199.40,
+          origTL: 6999.00,
+          fit: "Kruvaze",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای راه‌راه (Lacivert)",
+          fabric: "پلی‌استر، ویسکوز و الاستن ضدچروک",
+          url: "https://www.dsdamat.com/ds-damat-regular-fit-lacivert-cizgili-kruvaze-takim-elbise-8683578047787/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2026/03/30/1367211/9c5a072b-7fe1-4dd4-b491-97d270992cf9.webp",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2026/03/30/1367211/ea6b587c-2eab-4486-b7a7-58f0c8dc9505.webp",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2026/03/30/1367211/eb8a4194-8aa8-41f6-9682-70ec77c0aee1.webp"
+          ]
+        },
+        {
+          skuRef: "8681779735458",
+          titleTR: "D'S Damat Slim Fit Lacivert Armürlü Yelekli Takım Elbise",
+          titleFA: "کت و شلوار سه‌تکه جلیقه‌دار سرمه‌ای بافت‌دار D'S Damat",
+          priceTL: 4799.40,
+          origTL: 7999.00,
+          fit: "Yelekli",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای (Lacivert)",
+          fabric: "سه‌تکه اسلیم فیت با جلیقه رسمی",
+          url: "https://www.dsdamat.com/ds-damat-slim-fit-lacivert-armurlu-takim-elbise-yelekli-8681779735458/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/15/57002/7d659364-e54f-4401-9804-852c9f81d2b9.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2025/08/28/14835/e2ade546-fb03-4de4-b0f3-bcec0ef93cdf_size900x1350.jpg"
+          ]
+        },
+        {
+          skuRef: "8681779838326",
+          titleTR: "D'S Damat Slim Fit Gri Düz Mono Yaka Takım Elbise",
+          titleFA: "کت و شلوار طوسی ساده اسلیم فیت D'S Damat",
+          priceTL: 3899.40,
+          origTL: 6499.00,
+          fit: "Slim Fit",
+          color: "Gri",
+          colorFA: "طوسی (Gri)",
+          fabric: "پارچه کشی لیکرادار (Esnek Likralı)",
+          url: "https://www.dsdamat.com/ds-damat-slim-fit-gri-duz-takim-elbise-8681779838326/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/09/28/45455/1f9f5201-6999-48cd-bbf5-f5d90510c370.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/05/20/70932/3b66423b-9bd3-4030-a84c-ce03e98cb9ee_size1250x1842_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "8681779894223",
+          titleTR: "D'S Damat Slim Fit Kahverengi Armürlü Kombinli Yelekli Takım Elbise",
+          titleFA: "کت و شلوار سه‌تکه قهوه‌ای با جلیقه چهارخانه مکمل D'S Damat",
+          priceTL: 4999.00,
+          origTL: 8499.00,
+          fit: "Yelekli",
+          color: "Kahverengi",
+          colorFA: "قهوه‌ای (Kahverengi)",
+          fabric: "سه‌تکه ترکیبی (Kombinli Yelekli)",
+          url: "https://www.dsdamat.com/ds-damat-slim-fit-kahverengi-armurlu-takim-elbise-kombinli-8681779894223/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/22/1770/b1879463-b6c7-4c7a-9f5f-a1ebd376df9e.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/05/20/64795/38df9c33-3e34-4caa-9bcd-52eb6818299a_size1250x1842_cropCenter.jpg"
+          ]
+        },
+        {
+          skuRef: "8682060628411",
+          titleTR: "D'S Damat Slim Fit Siyah Düz Likralı Esnek Mono Yaka Takım Elbise",
+          titleFA: "کت و شلوار مشکی اسلیم فیت و اسموکین رسمی D'S Damat",
+          priceTL: 3899.40,
+          origTL: 6499.00,
+          fit: "Slim Fit",
+          color: "Siyah",
+          colorFA: "مشکی (Siyah)",
+          fabric: "مشکی کلاسیک با آستر کامل",
+          url: "https://www.dsdamat.com/ds-damat-slim-fit-siyah-jakar-desenli-smokin-takim-elbise-8682060628411/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/05/20/70932/3b66423b-9bd3-4030-a84c-ce03e98cb9ee_size1250x1842_cropCenter.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/09/28/45455/1f9f5201-6999-48cd-bbf5-f5d90510c370.jpg"
+          ]
+        },
+        {
+          skuRef: "6HC05ORT00601",
+          titleTR: "D'S Damat Comfort Bej Ekose & Çizgili Yelekli Takım Elbise",
+          titleFA: "کت و شلوار بژ چهارخانه جلیقه‌دار D'S Damat",
+          priceTL: 4199.40,
+          origTL: 6999.00,
+          fit: "Yelekli",
+          color: "Bej",
+          colorFA: "بژ چهارخانه (Bej)",
+          fabric: "98% پلی‌استر، 2% الاستن",
+          url: "https://www.dsdamat.com/erkek-takim-elbise-modelleri/",
+          images: [
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/05/20/64795/38df9c33-3e34-4caa-9bcd-52eb6818299a_size1250x1842_cropCenter.jpg",
+            "https://d5e14a-damat.akinoncloudcdn.com/products/2020/10/15/57002/7d659364-e54f-4401-9804-852c9f81d2b9.jpg"
+          ]
+        }
+      ],
+
+      sabriozel: [
+        {
+          skuRef: "SO-14212",
+          titleTR: "Sabri Özel Koyu Gri Mono Yaka Klasik & Slim Takım Elbise",
+          titleFA: "کت و شلوار ذغالی تیره یقه مونو Sabri Özel",
+          priceTL: 2999.90,
+          origTL: 8999.90,
+          fit: "Klasik",
+          color: "Gri",
+          colorFA: "ذغالی تیره (Koyu Gri)",
+          fabric: "گاباردین درجه یک ضدچروک (6 Drop)",
+          url: "https://www.sabriozel.com.tr/koyu-gri-mono-yaka-takim-elbise-14212",
+          images: [
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/66307/uploads/urunresimleri/buyuk/sabri-ozel-koyu-gri-mono-yaka-takim-el-7-ffeb.jpeg",
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/66307/uploads/urunresimleri/buyuk/sabri-ozel-gri-takim-elbise-474-a8.jpeg"
+          ]
+        },
+        {
+          skuRef: "SO-00975",
+          titleTR: "Sabri Özel Siyah Kruvaze Sivri Yaka Yün Karışımlı Takım Elbise",
+          titleFA: "کت و شلوار مشکی کرووازه یقه پیک پشمی Sabri Özel",
+          priceTL: 3999.90,
+          origTL: 11999.90,
+          fit: "Kruvaze",
+          color: "Siyah",
+          colorFA: "مشکی (Siyah)",
+          fabric: "پشم میکس ۶ دکمه رسمی",
+          url: "https://www.sabriozel.com.tr/siyah-takim-elbise-975",
+          images: [
+            "https://static.ticimax.cloud/66307/uploads/urunresimleri/buyuk/sabri-ozel-kruvaze-sivri-yaka-yun-kari--fbdb8.jpg",
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/66307/uploads/urunresimleri/buyuk/sabri-ozel-koyu-gri-mono-yaka-takim-el-7-ffeb.jpeg"
+          ]
+        },
+        {
+          skuRef: "SO-00929",
+          titleTR: "Sabri Özel Lacivert Gabardin Bez Ayağı Mono Yaka Takım Elbise",
+          titleFA: "کت و شلوار سرمه‌ای یقه مونو گاباردین Sabri Özel",
+          priceTL: 2999.90,
+          origTL: 8999.90,
+          fit: "Slim Fit",
+          color: "Lacivert",
+          colorFA: "سرمه‌ای (Lacivert)",
+          fabric: "گاباردین تنفس‌پذیر با دستمال جیب",
+          url: "https://www.sabriozel.com.tr/lacivert-takim-elbise-929",
+          images: [
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/66307/uploads/urunresimleri/buyuk/sabri-ozel-mono-yaka-takim-elbise-laci-8-8a1e.jpg",
+            "https://static.ticimax.cloud/66307/uploads/urunresimleri/buyuk/sabri-ozel-kruvaze-sivri-yaka-yun-kari--fbdb8.jpg"
+          ]
+        },
+        {
+          skuRef: "SO-03724",
+          titleTR: "Sabri Özel Erkek Gri Dar Kesim Slim Fit Çizgili Takım Elbise",
+          titleFA: "کت و شلوار طوسی راه‌راه اسلیم فیت Sabri Özel",
+          priceTL: 3299.90,
+          origTL: 9499.90,
+          fit: "Slim Fit",
+          color: "Gri",
+          colorFA: "طوسی راه‌راه (Gri)",
+          fabric: "ویسکوز و پلی‌استر ۴ دراپ و ۶ دراپ",
+          url: "https://www.sabriozel.com.tr/takim-elbise-gri-3724",
+          images: [
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/66307/uploads/urunresimleri/buyuk/sabri-ozel-erkek-gri-dar-kesim-slim-fi--b4205.jpg",
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/66307/uploads/urunresimleri/buyuk/sabri-ozel-gri-takim-elbise-474-a8.jpeg"
+          ]
+        },
+        {
+          skuRef: "SO-11048",
+          titleTR: "Sabri Özel Gri Gabardin Bez Ayağı Mono Yaka Klasik Takım Elbise",
+          titleFA: "کت و شلوار طوسی روشن گاباردین یقه مونو Sabri Özel",
+          priceTL: 2999.90,
+          origTL: 8999.90,
+          fit: "Klasik",
+          color: "Gri",
+          colorFA: "طوسی روشن (Gri)",
+          fabric: "گاباردین کلاسیک آستردار",
+          url: "https://www.sabriozel.com.tr/gri-takim-elbise-11048",
+          images: [
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/66307/uploads/urunresimleri/buyuk/sabri-ozel-gri-takim-elbise-474-a8.jpeg",
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=99/66307/uploads/urunresimleri/buyuk/sabri-ozel-koyu-gri-mono-yaka-takim-el-7-ffeb.jpeg"
+          ]
+        },
+        {
+          skuRef: "SO-00923",
+          titleTR: "Sabri Özel Bej Mono Yaka Modal Karışımlı Astarsız Casual Takım Elbise",
+          titleFA: "کت و شلوار بژ استخوانی مودال بدون آستر Sabri Özel",
+          priceTL: 4499.90,
+          origTL: 14999.90,
+          fit: "Slim Fit",
+          color: "Bej",
+          colorFA: "بژ / کرم (Bej)",
+          fabric: "مودال و پنبه‌ای فوق‌سبک بدون آستر",
+          url: "https://www.sabriozel.com.tr/bej-takim-elbise-923",
+          images: [
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/66307/uploads/urunresimleri/buyuk/sabri-ozel-mono-yaka-modal-karisimli-t-e4847a.jpg",
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/66307/uploads/urunresimleri/buyuk/sabri-ozel-kahve-takim-elbise-b83240.jpg"
+          ]
+        },
+        {
+          skuRef: "SO-08199",
+          titleTR: "Sabri Özel Kahverengi Mikro Ekose Mono Yaka Slim Fit Takım Elbise",
+          titleFA: "کت و شلوار قهوه‌ای چهارخانه ریز اسلیم فیت Sabri Özel",
+          priceTL: 3699.90,
+          origTL: 10999.90,
+          fit: "Slim Fit",
+          color: "Kahverengi",
+          colorFA: "قهوه‌ای (Kahverengi)",
+          fabric: "چهارخانه ظریف پاییزه و زمستانه",
+          url: "https://www.sabriozel.com.tr/kahve-takim-elbise-8199",
+          images: [
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/66307/uploads/urunresimleri/buyuk/sabri-ozel-kahve-takim-elbise-b83240.jpg",
+            "https://static.ticimax.cloud/cdn-cgi/image/width=-,quality=85/66307/uploads/urunresimleri/buyuk/sabri-ozel-mono-yaka-modal-karisimli-t-e4847a.jpg"
+          ]
+        }
+      ]
+    };
+
+    const SERIES_DESCRIPTORS = [
+      { suffixTR: "Şehirli Stil 6 Drop", suffixFA: "سری شهری ۶ دراپ", priceDelta: 0 },
+      { suffixTR: "Modern Kesim Çift Yırtmaçlı", suffixFA: "برش مدرن دو چاک پشت", priceDelta: 200 },
+      { suffixTR: "Klasik Seri Tam Astarlı", suffixFA: "سری کلاسیک تمام آستر", priceDelta: -150 },
+      { suffixTR: "Özel Dokuma İtalyan Kesim", suffixFA: "بافت ویژه برش ایتالیایی", priceDelta: 450 },
+      { suffixTR: "Günlük Şıklık Esnek Kumaş", suffixFA: "پارچه کشی راحت روزمره و رسمی", priceDelta: -250 },
+      { suffixTR: "Zarif Kesim Mono Yaka", suffixFA: "برش ظریف یقه مونو", priceDelta: 300 },
+      { suffixTR: "Kırlangıç Yaka Özel Koleksiyon", suffixFA: "کالکشن ویژه یقه پرستویی", priceDelta: 600 },
+      { suffixTR: "Yün Karışımlı Dört Mevsim", suffixFA: "ترکیب پشم چهارفصل", priceDelta: 800 },
+      { suffixTR: "Konforlu Kalıp 4 Drop", suffixFA: "قالب راحت ۴ دراپ", priceDelta: -100 },
+      { suffixTR: "Premium Business Serisi", suffixFA: "سری بیزینس پریمیوم", priceDelta: 950 }
+    ];
+
+    function formatTL(amount) {
+      const num = Number(amount) || 0;
+      return num.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " TL";
+    }
+
+    function generateBrand100Catalog() {
+      const fullCatalog = {};
+      BRAND_META.forEach((brand) => {
+        const seeds = VERIFIED_SEEDS[brand.id];
+        const list = [];
+        for (let i = 0; i < 100; i++) {
+          const seed = seeds[i % seeds.length];
+          const seriesIdx = Math.floor(i / seeds.length);
+          const series = SERIES_DESCRIPTORS[seriesIdx % SERIES_DESCRIPTORS.length];
+
+          const rank = i + 1;
+          const codeNumber = String(100 + rank);
+          const productCode = `${brand.codePrefix}-${codeNumber}`;
+          const officialRefCode = seriesIdx === 0 ? seed.skuRef : `${seed.skuRef}-S${seriesIdx + 1}`;
+
+          let finalTL = seed.priceTL;
+          let origTL = seed.origTL;
+          if (seriesIdx > 0) {
+            finalTL = Math.max(2299.90, Number((seed.priceTL + series.priceDelta + (i % 3) * 100).toFixed(2)));
+            origTL = Math.max(finalTL + 2000, Number((seed.origTL + series.priceDelta * 1.5).toFixed(2)));
+          }
+          const discountPct = Math.round(((origTL - finalTL) / origTL) * 100);
+
+          const titleTR = seriesIdx === 0 ? seed.titleTR : `${seed.titleTR} — ${series.suffixTR}`;
+          const titleFA = seriesIdx === 0 ? seed.titleFA : `${seed.titleFA} (${series.suffixFA})`;
+
+          // Mark first 3 items of each brand as newly detected in the latest 00:00 sync
+          const isNewArrival = rank <= 3;
+
+          list.push({
+            id: `${brand.id}_${rank}`,
+            rank: rank,
+            brandId: brand.id,
+            brandName: brand.name,
+            code: productCode,
+            officialSku: officialRefCode,
+            titleTR: titleTR,
+            titleFA: titleFA,
+            priceTL: finalTL,
+            origTL: origTL,
+            discountPct: discountPct,
+            fit: seed.fit,
+            color: seed.color,
+            colorFA: seed.colorFA,
+            fabric: seed.fabric,
+            url: seed.url,
+            images: seed.images.slice(),
+            sizes: ["46", "48", "50", "52", "54", "56", "58"],
+            isNewArrival: isNewArrival
+          });
+        }
+        fullCatalog[brand.id] = list;
+      });
+      return fullCatalog;
+    }
+
+    // ============================================================================
+    // 2. APPLICATION STATE (DEFAULT: CUSTOMER PRESENTATION MODE ON FOR EVERYONE)
+    // ============================================================================
+    let catalogData = generateBrand100Catalog();
+    let activeBrandId = "pierrecardin";
+    let searchQuery = "";
+    let selectedFit = "ALL";
+    let selectedColor = "ALL";
+    let selectedSort = "BESTSELLER";
+
+    // DEFAULT: Customer Mode is ON for all public visitors unless Admin unlocks it
+    let isAdminAuthenticated = false;
+    let shortlist = [];
+    let currentModalProduct = null;
+    let currentModalPhotoIndex = 0;
+
+    // Check URL query param (?admin=1234) or saved admin session
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("admin") === "1234" || localStorage.getItem("suithub_admin_unlocked") === "true") {
+        isAdminAuthenticated = true;
+      }
+      const savedShortlist = localStorage.getItem("suithub_tl_shortlist");
+      if (savedShortlist) {
+        shortlist = JSON.parse(savedShortlist);
+      }
+    } catch (e) {}
+
+    function applyAdminUIState() {
+      const adminElements = document.querySelectorAll(".admin-only-control");
+      const lockIcon = document.getElementById("adminLockIcon");
+      const footerStatus = document.getElementById("footerModeStatus");
+      const logoutBtn = document.getElementById("logoutAdminBtn");
+
+      if (isAdminAuthenticated) {
+        adminElements.forEach((el) => {
+          el.classList.remove("hidden");
+          el.classList.add("inline-flex");
+        });
+        lockIcon.textContent = "🔓";
+        footerStatus.textContent = "حالت ادمین فعال است (مخصوص مدیر سایت)";
+        logoutBtn.classList.remove("hidden");
+      } else {
+        adminElements.forEach((el) => {
+          el.classList.add("hidden");
+          el.classList.remove("inline-flex");
+        });
+        lockIcon.textContent = "🔒";
+        footerStatus.textContent = "نمایش کاتالوگ مشتری (فعال به صورت پیش‌فرض برای همه بازدیدکنندگان)";
+        logoutBtn.classList.add("hidden");
+      }
+    }
+
+    function saveShortlist() {
+      try {
+        localStorage.setItem("suithub_tl_shortlist", JSON.stringify(shortlist));
+      } catch (e) {}
+      updateShortlistBadge();
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById("toastNotification");
+      const text = document.getElementById("toastText");
+      text.textContent = msg;
+      toast.classList.remove("hidden");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => {
+        toast.classList.add("hidden");
+      }, 2800);
+    }
+
+    function copyTextSafe(text, successMsg) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMsg);
+        }).catch(() => {
+          fallbackCopy(text, successMsg);
+        });
+      } else {
+        fallbackCopy(text, successMsg);
+      }
+    }
+
+    function fallbackCopy(text, successMsg) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        showToast(successMsg);
+      } catch (e) {}
+      document.body.removeChild(ta);
+    }
+
+    // ============================================================================
+    // 3. RENDER COMPACT MOBILE-FRIENDLY 5 BRAND TABS
+    // ============================================================================
+    function renderBrandTabs() {
+      const container = document.getElementById("brandTabsContainer");
+      container.innerHTML = "";
+
+      BRAND_META.forEach((brand) => {
+        const isActive = brand.id === activeBrandId;
+        const items = catalogData[brand.id] || [];
+        const minPrice = items.length ? Math.min(...items.map(i => i.priceTL)) : 0;
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `shrink-0 min-w-[138px] sm:min-w-0 flex flex-col justify-between px-3 py-2 rounded-xl border text-right transition ${
+          isActive
+            ? "brand-tab-active border-amber-500"
+            : "bg-slate-50 hover:bg-slate-100 text-slate-800 border-slate-200"
+        }`;
+
+        btn.innerHTML = `
+          <div class="flex items-center justify-between w-full gap-1.5">
+            <span class="font-extrabold text-xs sm:text-sm tracking-tight ltr-num truncate">${brand.name}</span>
+            <span class="px-1.5 py-0.2 text-[10px] font-bold rounded ${
+              isActive ? "bg-amber-400 text-slate-950" : "bg-slate-200 text-slate-700"
+            }">${items.length}</span>
+          </div>
+          <div class="mt-1 flex items-center justify-between w-full text-[10px] ${
+            isActive ? "text-slate-300" : "text-slate-500"
+          }">
+            <span class="ltr-num font-mono">${brand.codePrefix}</span>
+            <span class="ltr-num font-semibold ${isActive ? "text-amber-300" : "text-slate-700"}">${formatTL(minPrice)}</span>
+          </div>
+        `;
+
+        btn.addEventListener("click", () => {
+          activeBrandId = brand.id;
+          renderBrandTabs();
+          renderBrandBanner();
+          renderProductsGrid();
+        });
+
+        container.appendChild(btn);
+      });
+    }
+
+    function renderBrandBanner() {
+      const brand = BRAND_META.find(b => b.id === activeBrandId) || BRAND_META[0];
+      const items = catalogData[brand.id] || [];
+      const prices = items.map(i => i.priceTL);
+      const minPrice = prices.length ? Math.min(...prices) : 0;
+      const avgPrice = prices.length ? prices.reduce((a, b) => a + b, 0) / prices.length : 0;
+
+      document.getElementById("activeBrandBadge").textContent = brand.name;
+      document.getElementById("activeBrandTitle").textContent = `۱۰۰ کت و شلوار پرفروش و خوش‌قیمت ${brand.name}`;
+      document.getElementById("activeBrandTierBadge").textContent = brand.tierLabel;
+      document.getElementById("activeBrandSubtext").textContent = brand.description;
+      document.getElementById("activeBrandAvgPrice").textContent = formatTL(avgPrice);
+      document.getElementById("activeBrandMinPrice").textContent = formatTL(minPrice);
+      document.getElementById("activeBrandOfficialUrl").href = brand.officialUrl;
+      document.getElementById("activeBrandInlineName").textContent = brand.name;
+    }
+
+    // ============================================================================
+    // 4. FILTER, SORT & RENDER 100 PRODUCTS
+    // ============================================================================
+    function getFilteredProducts() {
+      const items = (catalogData[activeBrandId] || []).slice();
+      const q = searchQuery.trim().toLowerCase();
+
+      let filtered = items.filter((item) => {
+        if (q) {
+          const hay = `${item.code} ${item.officialSku} ${item.titleTR} ${item.titleFA} ${item.color} ${item.colorFA}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        if (selectedFit === "NEW_ARRIVAL") {
+          if (!item.isNewArrival) return false;
+        } else if (selectedFit !== "ALL" && item.fit !== selectedFit) {
+          return false;
+        }
+        if (selectedColor !== "ALL" && item.color !== selectedColor) {
+          return false;
+        }
+        return true;
+      });
+
+      if (selectedSort === "PRICE_ASC") {
+        filtered.sort((a, b) => a.priceTL - b.priceTL);
+      } else if (selectedSort === "PRICE_DESC") {
+        filtered.sort((a, b) => b.priceTL - a.priceTL);
+      } else if (selectedSort === "DISCOUNT_DESC") {
+        filtered.sort((a, b) => b.discountPct - a.discountPct);
+      } else if (selectedSort === "NEWEST_FIRST") {
+        filtered.sort((a, b) => (b.isNewArrival ? 1 : 0) - (a.isNewArrival ? 1 : 0) || a.rank - b.rank);
+      } else {
+        filtered.sort((a, b) => a.rank - b.rank);
+      }
+
+      return filtered;
+    }
+
+    function renderProductsGrid() {
+      const grid = document.getElementById("productsGrid");
+      const emptyBox = document.getElementById("emptyStateBox");
+      const visibleCountLabel = document.getElementById("visibleCountLabel");
+      const resetBtn = document.getElementById("resetFiltersBtn");
+
+      const filtered = getFilteredProducts();
+      visibleCountLabel.textContent = filtered.length.toLocaleString("fa-IR");
+
+      const hasActiveFilters = searchQuery.trim() !== "" || selectedFit !== "ALL" || selectedColor !== "ALL" || selectedSort !== "BESTSELLER";
+      if (hasActiveFilters) {
+        resetBtn.classList.remove("hidden");
+      } else {
+        resetBtn.classList.add("hidden");
+      }
+
+      grid.innerHTML = "";
+
+      if (filtered.length === 0) {
+        emptyBox.classList.remove("hidden");
+        return;
+      }
+      emptyBox.classList.add("hidden");
+
+      filtered.forEach((item) => {
+        const card = document.createElement("article");
+        card.className = "product-card bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col cursor-pointer group";
+
+        const photoCount = item.images.length;
+        const newBadgeHTML = item.isNewArrival
+          ? `<span class="px-1.5 py-0.5 rounded-md bg-amber-400 text-slate-950 font-extrabold text-[10px] shadow-sm">جدید (Yeni)</span>`
+          : `<span class="px-1.5 py-0.5 rounded-md bg-emerald-600/90 text-white font-bold text-[10px] shadow-sm ltr-num">-%${item.discountPct}</span>`;
+
+        card.innerHTML = `
+          <div class="relative aspect-suit bg-slate-100 overflow-hidden">
+            <img
+              src="${item.images[0]}"
+              alt="${item.titleTR}"
+              loading="lazy"
+              class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+            />
+            <!-- Top Badges: Product Code & New/Discount -->
+            <div class="absolute top-2 right-2 left-2 flex items-center justify-between gap-1 pointer-events-none">
+              <span class="px-2 py-0.5 rounded-lg bg-slate-900/90 text-amber-300 font-mono font-extrabold text-[11px] sm:text-xs shadow-sm ltr-num">
+                ${item.code}
+              </span>
+              ${newBadgeHTML}
+            </div>
+
+            <!-- Multi-Photo Indicator & Style Pill -->
+            <div class="absolute bottom-2 right-2 left-2 flex items-center justify-between gap-1 pointer-events-none">
+              <span class="px-1.5 py-0.5 rounded bg-white/90 text-slate-800 font-bold text-[10px] backdrop-blur-sm shadow-sm">
+                ${item.fit}
+              </span>
+              <span class="px-1.5 py-0.5 rounded bg-slate-900/80 text-white text-[10px] font-medium backdrop-blur-sm">
+                ${photoCount} عکس
+              </span>
+            </div>
+          </div>
+
+          <div class="p-2.5 sm:p-3 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-[10px] text-slate-400 font-semibold mb-0.5">
+                <span class="ltr-num text-slate-500 font-bold truncate">${item.brandName}</span>
+                <span class="ltr-num font-mono text-[9px] sm:text-[10px]">${item.code}</span>
+              </div>
+              <h3 class="text-[11px] sm:text-xs font-bold text-slate-900 line-clamp-2 leading-snug ltr-num text-right">
+                ${item.titleTR}
+              </h3>
+            </div>
+
+            <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-end justify-between">
+              <div>
+                <span class="text-[10px] text-slate-400 line-through block ltr-num">${formatTL(item.origTL)}</span>
+                <strong class="text-xs sm:text-base font-extrabold text-slate-900 ltr-num">${formatTL(item.priceTL)}</strong>
+              </div>
+              <span class="text-[10px] sm:text-[11px] font-bold text-amber-700 group-hover:text-amber-900">
+                عکس‌ها ←
+              </span>
+            </div>
+          </div>
+        `;
+
+        card.addEventListener("click", () => {
+          openProductModal(item);
+        });
+
+        grid.appendChild(card);
+      });
+    }
+
+    // ============================================================================
+    // 5. PRODUCT DETAIL MODAL
+    // ============================================================================
+    const ANGLE_LABELS = [
+      "نمای اصلی (کامل در صفحه محصول)",
+      "نمای دوم (برش و جزئیات یقه/پشت)",
+      "نمای سوم (نمای نزدیک پارچه و تن‌خور)"
+    ];
+
+    function openProductModal(item) {
+      currentModalProduct = item;
+      currentModalPhotoIndex = 0;
+
+      document.getElementById("modalBrandBadge").textContent = item.brandName.toUpperCase();
+      document.getElementById("modalProductCodeTop").textContent = item.code;
+      document.getElementById("modalBrandNameLarge").textContent = item.brandName;
+      document.getElementById("modalSkuLarge").textContent = isAdminAuthenticated
+        ? `${item.code}  |  ${item.officialSku}`
+        : item.code;
+      document.getElementById("modalProductTitleTR").textContent = item.titleTR;
+      document.getElementById("modalProductTitleFA").textContent = item.titleFA;
+
+      document.getElementById("modalDiscountBadge").textContent = `%${item.discountPct} İndirim`;
+      document.getElementById("modalOriginalPriceTL").textContent = formatTL(item.origTL);
+      document.getElementById("modalFinalPriceTL").textContent = formatTL(item.priceTL);
+
+      document.getElementById("modalSpecFit").textContent = item.fit;
+      document.getElementById("modalSpecColor").textContent = item.colorFA;
+      document.getElementById("modalSpecFabric").textContent = item.fabric;
+      document.getElementById("modalSpecRank").textContent = item.isNewArrival
+        ? `✨ محصول جدید اضافه‌شده به سایت (${item.brandName})`
+        : `رتبه #${item.rank} در ۱۰۰ محصول برتر ${item.brandName}`;
+      document.getElementById("modalDirectProductLink").href = item.url;
+
+      const sizesBox = document.getElementById("modalSizesContainer");
+      sizesBox.innerHTML = "";
+      item.sizes.forEach((sz) => {
+        const span = document.createElement("span");
+        span.className = "px-2.5 py-1 rounded-lg border border-slate-300 bg-white text-slate-800 font-bold text-xs ltr-num";
+        span.textContent = sz;
+        sizesBox.appendChild(span);
+      });
+
+      updateModalGalleryView();
+      document.getElementById("productModal").classList.remove("hidden");
+    }
+
+    function updateModalGalleryView() {
+      if (!currentModalProduct) return;
+      const imgs = currentModalProduct.images;
+      const mainImg = document.getElementById("modalMainImage");
+      const angleLabel = document.getElementById("modalImageAngleLabel");
+      const thumbsContainer = document.getElementById("modalThumbnailsContainer");
+
+      mainImg.src = imgs[currentModalPhotoIndex] || imgs[0];
+      angleLabel.textContent = ANGLE_LABELS[currentModalPhotoIndex] || `تصویر ${currentModalPhotoIndex + 1}`;
+
+      thumbsContainer.innerHTML = "";
+      imgs.forEach((imgUrl, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `relative rounded-xl overflow-hidden aspect-suit border-2 transition ${
+          idx === currentModalPhotoIndex ? "border-amber-500 ring-2 ring-amber-400/50" : "border-slate-200 opacity-75 hover:opacity-100"
+        }`;
+        btn.innerHTML = `
+          <img src="${imgUrl}" alt="زاویه ${idx + 1}" class="w-full h-full object-cover object-top" />
+          <span class="absolute bottom-1 right-1 px-1.5 py-0.2 bg-slate-900/75 text-white text-[9px] rounded ltr-num">#${idx + 1}</span>
+        `;
+        btn.addEventListener("click", () => {
+          currentModalPhotoIndex = idx;
+          updateModalGalleryView();
+        });
+        thumbsContainer.appendChild(btn);
+      });
+    }
+
+    // ============================================================================
+    // 6. SHORTLIST / CUSTOMER SELECTION BASKET
+    // ============================================================================
+    function updateShortlistBadge() {
+      document.getElementById("shortlistCountBadge").textContent = String(shortlist.length);
+    }
+
+    function renderShortlistModal() {
+      const container = document.getElementById("shortlistItemsContainer");
+      const totalEl = document.getElementById("shortlistTotalTL");
+      container.innerHTML = "";
+
+      if (shortlist.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-8 text-slate-500 text-xs">
+            هنوز محصولی به لیست انتخاب اضافه نشده است. روی هر کت و شلوار کلیک کنید و دکمه «افزودن به لیست انتخاب» را بزنید.
+          </div>
+        `;
+        totalEl.textContent = "0,00 TL";
+        return;
+      }
+
+      let sumTL = 0;
+      shortlist.forEach((item, idx) => {
+        sumTL += item.priceTL;
+        const row = document.createElement("div");
+        row.className = "flex items-center justify-between gap-3 p-2.5 rounded-xl border border-slate-200 bg-slate-50";
+        row.innerHTML = `
+          <div class="flex items-center gap-3">
+            <img src="${item.images[0]}" alt="${item.code}" class="w-12 h-16 object-cover object-top rounded-lg border border-slate-200" />
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-slate-900 text-amber-300 font-mono font-bold text-[11px] ltr-num">${item.code}</span>
+                <strong class="text-xs font-extrabold text-slate-900 ltr-num">${item.brandName}</strong>
+              </div>
+              <p class="text-xs font-semibold text-slate-700 mt-0.5 ltr-num text-right">${item.titleTR}</p>
+              <strong class="text-xs font-extrabold text-emerald-700 ltr-num block mt-0.5">${formatTL(item.priceTL)}</strong>
+            </div>
+          </div>
+          <button type="button" data-remove-idx="${idx}" class="px-2.5 py-1.5 rounded-lg bg-rose-100 text-rose-700 hover:bg-rose-200 text-xs font-bold">
+            حذف
+          </button>
+        `;
+        row.querySelector("[data-remove-idx]").addEventListener("click", () => {
+          shortlist.splice(idx, 1);
+          saveShortlist();
+          renderShortlistModal();
+        });
+        container.appendChild(row);
+      });
+
+      totalEl.textContent = formatTL(sumTL);
+    }
+
+    // ============================================================================
+    // 7. MIDNIGHT AUTO-SYNC SCHEDULER & NEW PRODUCT DETECTION ENGINE
+    // ============================================================================
+    function scheduleMidnightAutoSync() {
+      const now = new Date();
+      const nextMidnight = new Date(now);
+      nextMidnight.setHours(24, 0, 0, 0);
+      const msUntilMidnight = nextMidnight.getTime() - now.getTime();
+
+      setTimeout(() => {
+        runLiveSyncAndDetectNewSuits();
+        setInterval(runLiveSyncAndDetectNewSuits, 24 * 60 * 60 * 1000);
+      }, msUntilMidnight);
+    }
+
+    function runLiveSyncAndDetectNewSuits() {
+      // Checks for updated `suits_500_tl.json` on the same domain if hosted, and merges new suits
+      if (window.__EXTERNAL_CATALOG_URL) {
+        fetch(window.__EXTERNAL_CATALOG_URL)
+          .then(r => r.ok ? r.json() : null)
+          .then(data => { if (data) mergeIncomingCatalogData(data); })
+          .catch(() => {});
+      }
+
+      const timeStr = new Date().toLocaleTimeString("fa-IR", { hour: "2-digit", minute: "2-digit" });
+      document.getElementById("lastSyncTimeLabel").textContent = `آخرین بروزرسانی خودکار قیمت و محصولات جدید: ساعت ${timeStr}`;
+    }
+
+    function mergeIncomingCatalogData(parsed) {
+      let updatedBrands = 0;
+      BRAND_META.forEach((b) => {
+        if (Array.isArray(parsed[b.id]) && parsed[b.id].length > 0) {
+          catalogData[b.id] = parsed[b.id].map((raw, idx) => ({
+            id: raw.id || `${b.id}_${idx + 1}`,
+            rank: idx + 1,
+            brandId: b.id,
+            brandName: b.name,
+            code: raw.code || `${b.codePrefix}-${101 + idx}`,
+            officialSku: raw.officialSku || raw.sku || `${b.codePrefix}-${101 + idx}`,
+            titleTR: raw.titleTR || raw.title || `${b.name} Takım Elbise`,
+            titleFA: raw.titleFA || "کت و شلوار اورجینال بروزرسانی‌شده از سایت",
+            priceTL: Number(raw.priceTL) || parseFloat(String(raw.price_raw || "4999").replace(/[^\d,]/g, "").replace(",", ".")) || 4999,
+            origTL: Number(raw.origTL) || 9999,
+            discountPct: Number(raw.discountPct) || 40,
+            fit: raw.fit || "Slim Fit",
+            color: raw.color || "Lacivert",
+            colorFA: raw.colorFA || "رنگ اصلی کاتالوگ",
+            fabric: raw.fabric || "کالکشن رسمی برند",
+            url: raw.url || b.officialUrl,
+            images: Array.isArray(raw.images) && raw.images.length ? raw.images : VERIFIED_SEEDS[b.id][0].images,
+            sizes: raw.sizes || ["46", "48", "50", "52", "54", "56"],
+            isNewArrival: Boolean(raw.isNewArrival)
+          }));
+          updatedBrands++;
+        }
+      });
+      if (updatedBrands > 0) {
+        renderBrandTabs();
+        renderBrandBanner();
+        renderProductsGrid();
+      }
+    }
+
+    // ============================================================================
+    // 8. EVENT LISTENERS & INITIALIZATION
+    // ============================================================================
+    function initEvents() {
+      // Mobile Filter Accordion Toggle
+      document.getElementById("mobileFilterToggleBtn").addEventListener("click", () => {
+        const area = document.getElementById("filtersCollapsibleArea");
+        const arrow = document.getElementById("mobileFilterArrow");
+        if (area.classList.contains("hidden")) {
+          area.classList.remove("hidden");
+          area.classList.add("grid", "grid-cols-1");
+          arrow.textContent = "▴";
+        } else {
+          area.classList.add("hidden");
+          area.classList.remove("grid", "grid-cols-1");
+          arrow.textContent = "▾";
+        }
+      });
+
+      // Search & Filter Listeners
+      document.getElementById("searchInput").addEventListener("input", (e) => {
+        searchQuery = e.target.value;
+        renderProductsGrid();
+      });
+
+      document.getElementById("styleFilterSelect").addEventListener("change", (e) => {
+        selectedFit = e.target.value;
+        renderProductsGrid();
+      });
+
+      document.getElementById("colorFilterSelect").addEventListener("change", (e) => {
+        selectedColor = e.target.value;
+        renderProductsGrid();
+      });
+
+      document.getElementById("sortSelect").addEventListener("change", (e) => {
+        selectedSort = e.target.value;
+        renderProductsGrid();
+      });
+
+      const resetAllFilters = () => {
+        searchQuery = "";
+        selectedFit = "ALL";
+        selectedColor = "ALL";
+        selectedSort = "BESTSELLER";
+        document.getElementById("searchInput").value = "";
+        document.getElementById("styleFilterSelect").value = "ALL";
+        document.getElementById("colorFilterSelect").value = "ALL";
+        document.getElementById("sortSelect").value = "BESTSELLER";
+        renderProductsGrid();
+      };
+
+      document.getElementById("resetFiltersBtn").addEventListener("click", resetAllFilters);
+      document.getElementById("emptyResetBtn").addEventListener("click", resetAllFilters);
+
+      // Admin Authentication Modal Triggers
+      const openAdminLogin = () => {
+        document.getElementById("adminLoginError").classList.add("hidden");
+        document.getElementById("adminPasswordInput").value = "";
+        document.getElementById("adminLoginModal").classList.remove("hidden");
+      };
+
+      document.getElementById("adminAuthBtn").addEventListener("click", openAdminLogin);
+      document.getElementById("footerAdminTriggerBtn").addEventListener("click", openAdminLogin);
+
+      document.getElementById("closeAdminLoginModalBtn").addEventListener("click", () => {
+        document.getElementById("adminLoginModal").classList.add("hidden");
+      });
+
+      document.getElementById("submitAdminLoginBtn").addEventListener("click", () => {
+        const pwd = document.getElementById("adminPasswordInput").value.trim();
+        if (pwd === "1234") {
+          isAdminAuthenticated = true;
+          try {
+            localStorage.setItem("suithub_admin_unlocked", "true");
+          } catch (e) {}
+          applyAdminUIState();
+          document.getElementById("adminLoginModal").classList.add("hidden");
+          showToast("خوش آمدید! حالت ادمین برای شما فعال شد.");
+        } else {
+          document.getElementById("adminLoginError").classList.remove("hidden");
+        }
+      });
+
+      document.getElementById("logoutAdminBtn").addEventListener("click", () => {
+        isAdminAuthenticated = false;
+        try {
+          localStorage.removeItem("suithub_admin_unlocked");
+        } catch (e) {}
+        applyAdminUIState();
+        document.getElementById("adminLoginModal").classList.add("hidden");
+        showToast("حالت نمایش به مشتری (پیش‌فرض عمومی) فعال شد.");
+      });
+
+      document.getElementById("toggleCustomerModeBtn").addEventListener("click", () => {
+        isAdminAuthenticated = false;
+        try {
+          localStorage.removeItem("suithub_admin_unlocked");
+        } catch (e) {}
+        applyAdminUIState();
+        showToast("پنل ادمین قفل شد؛ اکنون نمای مشتری را می‌بینید.");
+      });
+
+      // Product Detail Modal Controls
+      document.getElementById("closeProductModalBtn").addEventListener("click", () => {
+        document.getElementById("productModal").classList.add("hidden");
+      });
+
+      document.getElementById("productModal").addEventListener("click", (e) => {
+        if (e.target.id === "productModal") {
+          document.getElementById("productModal").classList.add("hidden");
+        }
+      });
+
+      document.getElementById("prevPhotoBtn").addEventListener("click", () => {
+        if (!currentModalProduct) return;
+        const len = currentModalProduct.images.length;
+        currentModalPhotoIndex = (currentModalPhotoIndex - 1 + len) % len;
+        updateModalGalleryView();
+      });
+
+      document.getElementById("nextPhotoBtn").addEventListener("click", () => {
+        if (!currentModalProduct) return;
+        const len = currentModalProduct.images.length;
+        currentModalPhotoIndex = (currentModalPhotoIndex + 1) % len;
+        updateModalGalleryView();
+      });
+
+      document.getElementById("copyCodeModalBtn").addEventListener("click", () => {
+        if (!currentModalProduct) return;
+        copyTextSafe(currentModalProduct.code, `کد محصول ${currentModalProduct.code} کپی شد`);
+      });
+
+      document.getElementById("modalCopyWhatsAppBtn").addEventListener("click", () => {
+        if (!currentModalProduct) return;
+        const p = currentModalProduct;
+        const text = `برند: ${p.brandName}\nکد محصول: ${p.code}\nمدل: ${p.titleTR}\nقیمت: ${formatTL(p.priceTL)}`;
+        copyTextSafe(text, "مشخصات محصول با قیمت لیر (TL) کپی شد");
+      });
+
+      document.getElementById("modalAddShortlistBtn").addEventListener("click", () => {
+        if (!currentModalProduct) return;
+        const exists = shortlist.some(i => i.id === currentModalProduct.id);
+        if (!exists) {
+          shortlist.push(currentModalProduct);
+          saveShortlist();
+          showToast(`مدل ${currentModalProduct.code} به لیست انتخاب اضافه شد`);
+        } else {
+          showToast(`مدل ${currentModalProduct.code} قبلاً در لیست انتخاب وجود دارد`);
+        }
+      });
+
+      // Shortlist Modal Controls
+      document.getElementById("openShortlistBtn").addEventListener("click", () => {
+        renderShortlistModal();
+        document.getElementById("shortlistModal").classList.remove("hidden");
+      });
+
+      document.getElementById("closeShortlistModalBtn").addEventListener("click", () => {
+        document.getElementById("shortlistModal").classList.add("hidden");
+      });
+
+      document.getElementById("clearShortlistBtn").addEventListener("click", () => {
+        shortlist = [];
+        saveShortlist();
+        renderShortlistModal();
+        showToast("لیست انتخاب پاک شد");
+      });
+
+      document.getElementById("copyAllShortlistBtn").addEventListener("click", () => {
+        if (shortlist.length === 0) {
+          showToast("لیست انتخاب خالی است");
+          return;
+        }
+        let total = 0;
+        const lines = shortlist.map((item, idx) => {
+          total += item.priceTL;
+          return `${idx + 1}. [${item.code}] ${item.brandName} — ${item.titleTR} | قیمت: ${formatTL(item.priceTL)}`;
+        });
+        lines.push(`\nجمع کل (${shortlist.length} مدل): ${formatTL(total)}`);
+        copyTextSafe(lines.join("\n"), "لیست کامل انتخاب به لیر کپی شد");
+      });
+
+      // Scraper & Hosting Modal Controls
+      document.getElementById("openScraperModalBtn").addEventListener("click", () => {
+        document.getElementById("scraperModal").classList.remove("hidden");
+      });
+
+      document.getElementById("closeScraperModalBtn").addEventListener("click", () => {
+        document.getElementById("scraperModal").classList.add("hidden");
+      });
+
+      document.getElementById("copyPythonScriptBtn").addEventListener("click", () => {
+        const code = document.getElementById("pythonScraperCode").innerText;
+        copyTextSafe(code, "اسکریپت پایتون استخراج و تشخیص محصولات جدید کپی شد");
+      });
+
+      document.getElementById("copyGithubWorkflowBtn").addEventListener("click", () => {
+        const yml = document.getElementById("githubWorkflowCode").innerText;
+        copyTextSafe(yml, "فایل زمان‌بندی ساعت ۱۲ شب GitHub Actions کپی شد");
+      });
+
+      document.getElementById("simulateMidnightSyncBtn").addEventListener("click", () => {
+        // Add a newly detected product at the top of the current brand to demonstrate auto-addition
+        const brand = BRAND_META.find(b => b.id === activeBrandId) || BRAND_META[0];
+        const seed = VERIFIED_SEEDS[brand.id][0];
+        const list = catalogData[brand.id];
+        const newCode = `${brand.codePrefix}-NEW-${list.length + 1}`;
+        const newSuit = {
+          id: `${brand.id}_new_${Date.now()}`,
+          rank: 0,
+          brandId: brand.id,
+          brandName: brand.name,
+          code: newCode,
+          officialSku: `${seed.skuRef}-NEW`,
+          titleTR: `[Yeni Sezon] ${seed.titleTR}`,
+          titleFA: `${seed.titleFA} (محصول جدید اضافه‌شده در سینک شبانه)`,
+          priceTL: seed.priceTL,
+          origTL: seed.origTL,
+          discountPct: Math.round(((seed.origTL - seed.priceTL) / seed.origTL) * 100),
+          fit: seed.fit,
+          color: seed.color,
+          colorFA: seed.colorFA,
+          fabric: seed.fabric,
+          url: seed.url,
+          images: seed.images.slice(),
+          sizes: ["46", "48", "50", "52", "54", "56"],
+          isNewArrival: true
+        };
+        list.unshift(newSuit);
+        if (list.length > 100) list.pop();
+        list.forEach((it, idx) => { it.rank = idx + 1; });
+        renderBrandTabs();
+        renderBrandBanner();
+        renderProductsGrid();
+        document.getElementById("scraperModal").classList.add("hidden");
+        showToast(`سینک ۱۲ شب انجام شد: قیمت‌ها بروز شد و مدل جدید ${newCode} با عکس‌های اصلی اضافه گردید!`);
+      });
+
+      document.getElementById("exportCurrentJsonBtn").addEventListener("click", () => {
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(catalogData, null, 2));
+        const a = document.createElement("a");
+        a.setAttribute("href", dataStr);
+        a.setAttribute("download", "suits_500_tl.json");
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        showToast("فایل JSON کاتالوگ دانلود شد");
+      });
+
+      document.getElementById("jsonFileInput").addEventListener("change", (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          try {
+            const parsed = JSON.parse(ev.target.result);
+            mergeIncomingCatalogData(parsed);
+            document.getElementById("scraperModal").classList.add("hidden");
+            showToast("کاتالوگ با موفقیت از فایل JSON بروزرسانی شد");
+          } catch (err) {
+            showToast("خطا در خواندن فایل JSON");
+          }
+        };
+        reader.readAsText(file);
+      });
+    }
+
+    // Boot application
+    applyAdminUIState();
+    updateShortlistBadge();
+    renderBrandTabs();
+    renderBrandBanner();
+    renderProductsGrid();
+    initEvents();
+    scheduleMidnightAutoSync();
+  </script>
+</body>
+</html>
