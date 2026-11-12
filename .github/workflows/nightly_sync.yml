@@ -1,0 +1,37 @@
+name: Nightly 00:00 Istanbul SuitHub Sync
+
+on:
+  schedule:
+    # هر شب ساعت 21:00 جهانی که دقیقاً معادل 00:00 (۱۲ شب) به وقت استانبول است
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Playwright & Chromium
+        run: |
+          pip install playwright beautifulsoup4
+          playwright install --with-deps chromium
+
+      - name: Run 5-Brand Scraper (Prices + New Products)
+        run: python scraper_sync.py
+
+      - name: Commit & Push Updated Catalog
+        run: |
+          git config user.name "SuitHub AutoSync Bot"
+          git config user.email "bot@suithub.local"
+          git add suits_500_tl.json
+          git diff --staged --quiet || git commit -m "Auto-update TL prices & new suits at 00:00 TRT"
+          git push
