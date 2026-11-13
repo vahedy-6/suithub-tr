@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-11-12 00:00:00",
+  "last_sync": "2026-11-13 00:00:00",
   "pierrecardin": [
     {
       "id": "pierrecardin_1",
@@ -8,18 +8,18 @@
       "brandName": "Pierre Cardin",
       "code": "PC-101",
       "officialSku": "PC-101",
-      "titleTR": "Lacivert Slim Fit V Yaka Triko Yelek",
+      "titleTR": "Füme Extra Slim Fit Takım Elbise Kumaş Karışımlı",
       "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
-      "priceTL": 2999.0,
-      "origTL": 4498.5,
+      "priceTL": 16498.0,
+      "origTL": 24747.0,
       "discountPct": 33,
-      "fit": "Yelekli",
-      "color": "Lacivert",
+      "fit": "Slim Fit",
+      "color": "Gri",
       "colorFA": "رنگ اصلی کاتالوگ",
       "fabric": "کالکشن رسمی برند",
-      "url": "https://www.pierrecardin.com.tr/lacivert-slim-fit-triko-yelek-50317313-vr033/",
+      "url": "https://www.pierrecardin.com.tr/fume-ex-slim-fit-takim-elbise-50295112-vr058/",
       "images": [
-        "https://25d163-pcardin.akinoncloudcdn.com/products/2025/10/06/1215287/c3e2c1a9-4946-42bc-b022-6fbbe4217351.jpg",
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2024/12/20/1110296/19953d90-a759-49a7-a553-2865243fb259.jpg",
         "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
         "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
       ],
@@ -31,7 +31,7 @@
         "54",
         "56"
       ],
-      "isNewArrival": false
+      "isNewArrival": true
     },
     {
       "id": "pierrecardin_2",
@@ -40,18 +40,18 @@
       "brandName": "Pierre Cardin",
       "code": "PC-102",
       "officialSku": "PC-102",
-      "titleTR": "Siyah Slim Fit V Yaka Triko Yelek",
+      "titleTR": "Lacivert Extra Slim Fit Çizgili Kruvaze Takım Elbise",
       "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
-      "priceTL": 2999.0,
-      "origTL": 4498.5,
+      "priceTL": 6499.0,
+      "origTL": 9748.5,
       "discountPct": 33,
-      "fit": "Yelekli",
-      "color": "Siyah",
+      "fit": "Kruvaze",
+      "color": "Lacivert",
       "colorFA": "رنگ اصلی کاتالوگ",
       "fabric": "کالکشن رسمی برند",
-      "url": "https://www.pierrecardin.com.tr/siyah-slim-fit-triko-yelek-50333914-vr046/",
+      "url": "https://www.pierrecardin.com.tr/lacivert-ex-slim-fit-takim-elbise-50325157-vr033-2/",
       "images": [
-        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/10/23/1302434/877c295b-3b28-47b2-96f1-c4bf023e6c50.jpg",
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/28/1257466/9a631287-cbb3-4b45-9f0c-f2bf545519e8.jpg",
         "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
         "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
       ],
@@ -63,7 +63,423 @@
         "54",
         "56"
       ],
-      "isNewArrival": false
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_3",
+      "rank": 3,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-103",
+      "officialSku": "PC-103",
+      "titleTR": "Lacivert Extra Slim Fit Çizgili Takım Elbise Kırlangıç Yaka",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 5039.0,
+      "origTL": 7558.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Lacivert",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/lacivert-ex-slim-fit-takim-elbise-50306678-vr033/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2024/12/03/1109098/574a5f90-6dc0-4e63-b434-80aa647735ce.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_4",
+      "rank": 4,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-104",
+      "officialSku": "PC-104",
+      "titleTR": "Lacivert Ekstra Slim Fit Spor Takım Elbise",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 11248.0,
+      "origTL": 16872.0,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Lacivert",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/lacivert-ex-slim-fit-takim-elbise-50277602-vr033/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2023/07/15/915576/02b6e087-76c7-4f68-a65c-e080b4badc39.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_5",
+      "rank": 5,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-105",
+      "officialSku": "PC-105",
+      "titleTR": "Siyah Slim Fit Mono Yaka Takım Elbise",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 5799.0,
+      "origTL": 8698.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Siyah",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/siyah-slim-fit-takim-elbise-50325155-vr046/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/04/28/1256260/e71aa7f3-58d6-49e9-a900-26bf65f24b95.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_6",
+      "rank": 6,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-106",
+      "officialSku": "PC-106",
+      "titleTR": "Füme Extra Slim Fit Kırlangıç Yaka Çizgili Takım Elbise",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 6499.0,
+      "origTL": 9748.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Gri",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/fume-ex-slim-fit-takim-elbise-50325234-vr058-1/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/07/22/1256247/90980c2d-7a8f-43c0-97e5-15f5bf6610aa.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_7",
+      "rank": 7,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-107",
+      "officialSku": "PC-107",
+      "titleTR": "Açık Kahverengi Slim Fit Ekose Takım Elbise Kumaş Karışımlı",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 4999.0,
+      "origTL": 7498.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Gri",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/product/192028/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/08/10/965178/cee045b9-3d59-48b4-a7ae-c58010d2d6d1.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_8",
+      "rank": 8,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-108",
+      "officialSku": "PC-108",
+      "titleTR": "Lacivert Ekstra Slim Fit Çizgili Takım Elbise Klasik Stil",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 10498.0,
+      "origTL": 15747.0,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Lacivert",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/lacivert-ex-slim-fit-takim-elbise-50276879-vr033/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2023/08/26/925238/02965c93-5b72-42f9-a887-dec27e7da85b.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_9",
+      "rank": 9,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-109",
+      "officialSku": "PC-109",
+      "titleTR": "Füme Extra Slim Fit Çizgili Kruvaze Yün Karışımlı Takım Elbise",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 6599.0,
+      "origTL": 9898.5,
+      "discountPct": 33,
+      "fit": "Kruvaze",
+      "color": "Gri",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/fume-ex-slim-fit-takim-elbise-50293422-vr058/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2024/06/26/1034561/51afe4ae-b940-4ca1-aa6d-dae4a6c51353.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_10",
+      "rank": 10,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-110",
+      "officialSku": "PC-110",
+      "titleTR": "Siyah Extra Slim Fit Takım Elbise Modern Stil",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 17999.0,
+      "origTL": 26998.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Siyah",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/siyah-ex-slim-fit-takim-elbise-50292223-vr046/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/08/10/1065169/fc71badb-3970-4b8c-8a75-d0526446832a.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_11",
+      "rank": 11,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-111",
+      "officialSku": "PC-111",
+      "titleTR": "Kahverengi Slim Fit Takım Elbise Modern Stil",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 17499.0,
+      "origTL": 26248.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Gri",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/kahverengi-slim-fit-takim-elbise-50292221-vr029-1/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2024/06/26/1036841/602cece3-c820-47dc-85f0-92f29abb335d.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_12",
+      "rank": 12,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-112",
+      "officialSku": "PC-112",
+      "titleTR": "Siyah Slim Fit Takım Elbise Şehirli Stil",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 18999.0,
+      "origTL": 28498.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Siyah",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/siyah-slim-fit-takim-elbise-50317643-vr046/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2025/09/26/1188325/ff318815-5b00-4a16-9929-02bbaa320525.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_13",
+      "rank": 13,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-113",
+      "officialSku": "PC-113",
+      "titleTR": "Lacivert Extra Slim Fit Takım Elbise Günlük Şıklık",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 7699.0,
+      "origTL": 11548.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Lacivert",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/lacivert-ex-slim-fit-takim-elbise-50302426-vr033-1/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2025/06/11/1184196/a3679856-eaf5-4caa-9b46-973fd40d895f.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_14",
+      "rank": 14,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-114",
+      "officialSku": "PC-114",
+      "titleTR": "Siyah Extra Slim Fit Çizgili Kruvaze Takım Elbise Modern Stil",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 12999.0,
+      "origTL": 19498.5,
+      "discountPct": 33,
+      "fit": "Kruvaze",
+      "color": "Siyah",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/siyah-ex-slim-fit-takim-elbise-50316758-vr046/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2026/03/25/1247657/74cf35ce-bc3e-4ecc-85f5-36af89d028f7.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
+    },
+    {
+      "id": "pierrecardin_15",
+      "rank": 15,
+      "brandId": "pierrecardin",
+      "brandName": "Pierre Cardin",
+      "code": "PC-115",
+      "officialSku": "PC-115",
+      "titleTR": "Koyu Mavi Slim Fit Çizgili Yün Kaşmir Karışımlı Takım Elbise",
+      "titleFA": "کت و شلوار اورجینال بروزرسانی‌شده از سایت رسمی",
+      "priceTL": 55999.0,
+      "origTL": 83998.5,
+      "discountPct": 33,
+      "fit": "Slim Fit",
+      "color": "Gri",
+      "colorFA": "رنگ اصلی کاتالوگ",
+      "fabric": "کالکشن رسمی برند",
+      "url": "https://www.pierrecardin.com.tr/saks-slim-fit-takim-elbise-50291986-vr032/",
+      "images": [
+        "https://25d163-pcardin.akinoncloudcdn.com/products/2024/09/25/1051965/bba3609b-c949-4bdb-8184-8e9d3b8c6495.jpg",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/fav-pc-1-1792479161.png",
+        "https://web-image.useinsider.com/pierrecardintr/defaultImageLibrary/Quickview%20Icon-1792479251.png"
+      ],
+      "sizes": [
+        "46",
+        "48",
+        "50",
+        "52",
+        "54",
+        "56"
+      ],
+      "isNewArrival": true
     }
   ],
   "babaterzi": [
